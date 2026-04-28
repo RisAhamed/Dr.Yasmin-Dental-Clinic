@@ -6,6 +6,8 @@ import FloatingButtons from "@/components/FloatingButtons";
 import Navbar from "@/components/Navbar";
 import { clinicInfo } from "@/lib/clinic";
 
+const siteUrl = "https://dr-yasmin-dental-clinic.vercel.app";
+
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
@@ -20,25 +22,21 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Dr. Yasmin Dental Clinic | 24/7 Dentist in Vadapalani, Chennai",
   description:
-    "Dr. Yasmin Dental Clinic — Expert dental care in Vadapalani, Chennai. Open 24 hours, 7 days a week. Services include general dentistry, cosmetic dentistry, root canal, dental implants, teeth whitening and emergency dental care.",
+    "Dr. Yasmin Dental Clinic in Vadapalani, Chennai — affordable dental care including teeth cleaning, root canal, implants, whitening & more. Book your appointment today.",
   keywords: [
-    "dental clinic Vadapalani",
-    "dentist Chennai",
-    "24/7 dental clinic Chennai",
+    "dental clinic Chennai",
+    "dentist Vadapalani",
+    "teeth cleaning Chennai",
     "root canal Chennai",
-    "teeth whitening Vadapalani",
-    "dental implants Chennai",
-    "emergency dentist Chennai open now",
-    "best dentist Arcot Road Chennai",
-    "Dr Yasmin dental clinic",
-    "paediatric dentist Chennai",
+    "dental implants Vadapalani",
+    "best dentist Arcot Road",
   ],
-  alternates: { canonical: clinicInfo.website },
+  alternates: { canonical: siteUrl },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Dr. Yasmin Dental Clinic | 24/7 Dentist in Vadapalani Chennai",
-    description: "Comprehensive dental care open 24/7 in Vadapalani, Chennai.",
-    url: clinicInfo.website,
+    title: "Dr. Yasmin Dental Clinic Chennai",
+    description: "Expert dental care in Vadapalani, Chennai. Affordable treatments.",
+    url: siteUrl,
     siteName: clinicInfo.name,
     locale: "en_IN",
     type: "website",
@@ -52,6 +50,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${poppins.variable} ${inter.variable} h-full antialiased`}>
+      <head>
+        <meta
+          name="description"
+          content="Dr. Yasmin Dental Clinic in Vadapalani, Chennai — affordable dental care including teeth cleaning, root canal, implants, whitening & more. Book your appointment today."
+        />
+        <meta
+          name="keywords"
+          content="dental clinic Chennai, dentist Vadapalani, teeth cleaning Chennai, root canal Chennai, dental implants Vadapalani, best dentist Arcot Road"
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://dr-yasmin-dental-clinic.vercel.app" />
+        <meta property="og:title" content="Dr. Yasmin Dental Clinic Chennai" />
+        <meta
+          property="og:description"
+          content="Expert dental care in Vadapalani, Chennai. Affordable treatments."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://dr-yasmin-dental-clinic.vercel.app" />
+      </head>
       <body className="min-h-full flex flex-col bg-white text-[#1A1A2E]">
         <Navbar />
         <main className="flex-1">{children}</main>
