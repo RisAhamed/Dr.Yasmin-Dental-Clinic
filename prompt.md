@@ -444,42 +444,6 @@ MISSION BOX (below text, teal bg-[#0A7EA4] rounded-2xl p-6 text-white):
   "Our Mission: To make world-class dental care accessible to every family
   in Vadapalani — affordable, comfortable, and always available."
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
- APPOINTMENT FORM — /appointments/page.tsx
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-HERO: bg-[#0A7EA4] py-16 text-center text-white
-  Heading: "Book Your Appointment"
-  Subtext: "Fill the form below — we'll confirm within 30 minutes"
-
-SPLIT LAYOUT (grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto py-16):
-
-LEFT — FORM (white card, rounded-2xl, shadow-xl, p-8):
-  Field 1: Full Name (type=text, placeholder="Your Full Name", required)
-  Field 2: Phone (+91 prefix chip + type=tel, required)
-  Field 3: Email (type=email, required)
-  Field 4: Service Needed (select dropdown):
-           Options: General Dentistry | Cosmetic Dentistry | Root Canal |
-           Dental Implants | Teeth Cleaning | Orthodontics |
-           Paediatric Dentistry | Emergency | Other
-  Field 5: Preferred Date (type=date, required)
-  Field 6: Preferred Time (select):
-           Options: Morning 9AM–12PM | Afternoon 12PM–4PM |
-           Evening 4PM–8PM | Night 8PM–12AM | Emergency (Any Time)
-  Field 7: Message/Notes (textarea, rows=4, optional,
-           placeholder="Any specific concerns or information?")
-  Submit : "Book My Appointment" (full width, primary blue, py-4, text-lg, rounded-xl)
-  On Submit: Show green toast notification:
-             "✅ Appointment request sent! We'll call you to confirm shortly."
-
-RIGHT — CONTACT INFO BOX (bg-[#E8F4FD] rounded-2xl p-8):
-  Heading: "Clinic Information"
-  📍 122, Arcot Rd, opposite Murugan Temple Arch,
-     Sarvamangala Colony, Vadapalani, Chennai – 600026
-  📞 +91 9551118120 (24/7 Emergency Line)
-  ✉️ info@dryasmindental.com
-  🕐 Open 24 Hours / 7 Days a Week
-
   Google Map iframe (below info):
   <iframe
     src="https://maps.google.com/maps?q=13.0499725,80.2130335&z=17&output=embed"

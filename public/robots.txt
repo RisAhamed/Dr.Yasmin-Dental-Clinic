@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://dr-yasmin-dental-clinic.vercel.app/
-
-# Sitemaps
-Sitemap: https://dr-yasmin-dental-clinic.vercel.app/sitemap.xml
