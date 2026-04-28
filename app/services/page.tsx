@@ -5,9 +5,9 @@ import { clinicInfo } from "@/lib/clinic";
 import { getAllServices } from "@/lib/services";
 
 export const metadata: Metadata = {
-  title: "Dental Services in Vadapalani Chennai | Dr. Yasmin Dental Clinic",
+  title: "Dental Services in Vadapalani Chennai | Supreme Multi-Speciality Dental Centre",
   description:
-    "Explore all 18 dental services at Dr. Yasmin Dental Clinic, Vadapalani — general dentistry, root canal, implants, whitening, orthodontics and 24/7 emergency dental care in Chennai.",
+    "Explore all 18 dental services at Supreme Multi-Speciality Dental Centre, Vadapalani — general dentistry, root canal, implants, whitening, orthodontics and 24/7 emergency dental care in Chennai.",
   alternates: { canonical: `${clinicInfo.website}/services` },
 };
 

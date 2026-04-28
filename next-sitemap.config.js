@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://dr-yasmin-dental-clinic.vercel.app',
+  siteUrl: 'https://supreme-dental-clinic.vercel.app',
   generateRobotsTxt: true,
   generateIndexSitemap: false,   // ← DISABLE index, output one sitemap.xml only
   outDir: 'public',

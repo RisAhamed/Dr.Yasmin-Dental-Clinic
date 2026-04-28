@@ -22,7 +22,7 @@ const testimonials = [
   },
   {
     name: "Meena Lakshmi",
-    location: "Sarvamangala Colony, Chennai",
+    location: "Vadapalani, Chennai",
     review:
       "My children absolutely love coming here. The doctor is so gentle and patient with kids. Teeth cleaning done in just 30 minutes. Best dental clinic near Arcot Road!",
     avatar: "ML",

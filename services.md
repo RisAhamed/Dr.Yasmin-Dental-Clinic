@@ -1,5 +1,5 @@
 # services.md
-# Dr. Yasmin Dental Clinic — Complete Services Specification
+# Supreme Multi-Speciality Dental Centre — Complete Services Specification
 # Usage: Attach this file alongside the main AI development prompt and say:
 # "Build the complete website using the main prompt AND integrate services.md
 #  for the Services page, homepage service section, and all UI display logic."
@@ -91,7 +91,7 @@ category      : General
 display_type  : IMAGE
 image_url     : https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80
 local_image   : /public/services/general-checkup.jpg
-image_alt     : "General dental check-up and consultation at Dr Yasmin Dental Clinic Vadapalani"
+image_alt     : "General dental check-up and consultation at Supreme Multi-Speciality Dental Centre Vadapalani"
 badge_color   : bg-blue-100 text-blue-700
 title         : General Dental Check-up
 short_desc    : Routine oral examination, dental X-rays, and personalised
@@ -223,7 +223,7 @@ category      : Surgical
 display_type  : IMAGE
 image_url     : https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=600&q=80
 local_image   : /public/services/root-canal.jpg
-image_alt     : "Painless root canal treatment RCT at Dr Yasmin Dental Clinic Chennai"
+image_alt     : "Painless root canal treatment RCT at Supreme Multi-Speciality Dental Centre Chennai"
 badge_color   : bg-red-100 text-red-700
 title         : Root Canal Treatment
 short_desc    : Advanced, pain-free RCT using rotary instruments to save
@@ -726,8 +726,8 @@ Icon fallback for image cards (if no image available):
 
 ## SEO RULES FOR SERVICES PAGE
 
-Page title    : "Dental Services in Vadapalani Chennai | Dr. Yasmin Dental Clinic"
-Meta desc     : "Explore all 18 dental services at Dr. Yasmin Dental Clinic,
+Page title    : "Dental Services in Vadapalani Chennai | Supreme Multi-Speciality Dental Centre"
+Meta desc     : "Explore all 18 dental services at Supreme Multi-Speciality Dental Centre,
                  Vadapalani — general dentistry, root canal, implants, whitening,
                  orthodontics & 24/7 emergency dental care in Chennai."
 H1            : "Our Dental Services"

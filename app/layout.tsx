@@ -6,7 +6,7 @@ import FloatingButtons from "@/components/FloatingButtons";
 import Navbar from "@/components/Navbar";
 import { clinicInfo } from "@/lib/clinic";
 
-const siteUrl = "https://dr-yasmin-dental-clinic.vercel.app";
+const siteUrl = "https://supreme-dental-clinic.vercel.app";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -20,9 +20,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Dr. Yasmin Dental Clinic | 24/7 Dentist in Vadapalani, Chennai",
+  title: "Supreme Multi-Speciality Dental Centre | 24/7 Dentist in Vadapalani, Chennai",
   description:
-    "Dr. Yasmin Dental Clinic in Vadapalani, Chennai — affordable dental care including teeth cleaning, root canal, implants, whitening & more. Book your appointment today.",
+    "Supreme Multi-Speciality Dental Centre — Expert dental care in Vadapalani, Chennai with teeth cleaning, root canal, implants, whitening and emergency dental care.",
   keywords: [
     "dental clinic Chennai",
     "dentist Vadapalani",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   alternates: { canonical: siteUrl },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Dr. Yasmin Dental Clinic Chennai",
+    title: "Supreme Multi-Speciality Dental Centre Chennai",
     description: "Expert dental care in Vadapalani, Chennai. Affordable treatments.",
     url: siteUrl,
     siteName: clinicInfo.name,
@@ -53,7 +53,7 @@ export default function RootLayout({
       <head>
         <meta
           name="description"
-          content="Dr. Yasmin Dental Clinic in Vadapalani, Chennai — affordable dental care including teeth cleaning, root canal, implants, whitening & more. Book your appointment today."
+          content="Supreme Multi-Speciality Dental Centre — Expert dental care in Vadapalani, Chennai with teeth cleaning, root canal, implants, whitening and emergency dental care."
         />
         <meta
           name="keywords"
@@ -64,14 +64,14 @@ export default function RootLayout({
           name="google-site-verification"
           content="V7z08_4Lx_HcCK5zFX-MNmttJoKh8ilPhFiTwoX_BXw"
         />
-        <link rel="canonical" href="https://dr-yasmin-dental-clinic.vercel.app" />
-        <meta property="og:title" content="Dr. Yasmin Dental Clinic Chennai" />
+        <link rel="canonical" href="https://supreme-dental-clinic.vercel.app" />
+        <meta property="og:title" content="Supreme Multi-Speciality Dental Centre Chennai" />
         <meta
           property="og:description"
           content="Expert dental care in Vadapalani, Chennai. Affordable treatments."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://dr-yasmin-dental-clinic.vercel.app" />
+        <meta property="og:url" content="https://supreme-dental-clinic.vercel.app" />
       </head>
       <body className="min-h-full flex flex-col bg-white text-[#1A1A2E]">
         <Navbar />
@@ -104,8 +104,8 @@ export default function RootLayout({
               openingHours: "Mo-Su 00:00-24:00",
               hasMap: `https://maps.google.com/?q=${clinicInfo.latitude},${clinicInfo.longitude}`,
               sameAs: [
-                "https://www.facebook.com/dryasmindental",
-                "https://www.instagram.com/dryasmindental",
+                "https://www.facebook.com/supremedental",
+                "https://www.instagram.com/supremedental",
               ],
             }),
           }}

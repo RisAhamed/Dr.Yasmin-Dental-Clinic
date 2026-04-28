@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://dr-yasmin-dental-clinic.vercel.app/sitemap.xml',
+    sitemap: 'https://supreme-dental-clinic.vercel.app/sitemap.xml',
   }
 }

@@ -21,7 +21,7 @@ export default function ContactPage() {
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
-          title="Dr. Yasmin Dental Clinic on Google Maps"
+          title="Supreme Multi-Speciality Dental Centre on Google Maps"
         />
       </section>
 
@@ -31,8 +31,7 @@ export default function ContactPage() {
             <MapPin size={40} color="#0A7EA4" className="mx-auto mb-4" />
             <h2 className="text-xl font-bold">Our Address</h2>
             <p className="text-[#5A5A7A] mt-3">
-              122, Arcot Rd, opposite Murugan Temple Arch, Sarvamangala Colony, Vadapalani,
-              Chennai 600026
+              1/5, Kodambakkam Saidapet Road, Vadapalani, Chennai – 600026. Near Vadapalani Masjid
             </p>
             <Link
               href={clinicInfo.mapsUrl}

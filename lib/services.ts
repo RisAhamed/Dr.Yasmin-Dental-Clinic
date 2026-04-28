@@ -113,7 +113,7 @@ function parseServiceBlock(block: string): Service | null {
     slug,
     category: String(data.category) as ServiceCategory,
     imageSrc: resolveMappedServiceImage(slug),
-    imageAlt: `${title} at Dr. Yasmin Dental Clinic`,
+    imageAlt: `${title} at Supreme Multi-Speciality Dental Centre`,
     badgeColor: (data.badge_color as string | undefined) ?? "bg-blue-100 text-blue-700",
     title,
     shortDesc: String(data.short_desc ?? ""),

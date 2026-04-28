@@ -13,7 +13,7 @@ export default function AboutPage() {
   return (
     <>
       <section className="bg-[#0A7EA4] py-20 text-white text-center">
-        <h1 className="text-4xl font-bold">About Dr. Yasmin Dental Clinic</h1>
+        <h1 className="text-4xl font-bold">About Supreme Multi-Speciality Dental Centre</h1>
         <p className="mt-3 text-lg">15+ Years of Trusted Dental Care in Vadapalani, Chennai</p>
       </section>
 
@@ -21,7 +21,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           <Image
             src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=700&q=80"
-            alt="Female dentist at Dr Yasmin Dental Clinic Chennai"
+            alt="Female dentist at Supreme Multi-Speciality Dental Centre Chennai"
             width={700}
             height={900}
             className="rounded-2xl shadow-xl w-full h-auto object-cover"
@@ -30,9 +30,9 @@ export default function AboutPage() {
           <div>
             <h2 className="text-3xl font-bold text-[#1A1A2E]">About Our Clinic</h2>
             <p className="text-[#5A5A7A] mt-4">
-              Dr. Yasmin Dental Clinic has been serving the families of Vadapalani, Chennai for
-              over 15 years. Located on Arcot Road, opposite the iconic Murugan Temple Arch, our
-              clinic is a trusted name in dental healthcare across Sarvamangala Colony.
+              Supreme Multi-Speciality Dental Centre has been serving the families of Vadapalani,
+              Chennai for over 15 years. Located on Kodambakkam Saidapet Road, near Vadapalani
+              Masjid, our clinic is a trusted name in dental healthcare.
             </p>
             <p className="text-[#5A5A7A] mt-4">
               We provide a complete range of dental services — from simple check-ups and cleaning

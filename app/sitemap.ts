@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://dr-yasmin-dental-clinic.vercel.app'
+  const baseUrl = 'https://supreme-dental-clinic.vercel.app'
 
   return [
     {

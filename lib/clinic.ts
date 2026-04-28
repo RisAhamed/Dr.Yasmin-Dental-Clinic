@@ -1,21 +1,21 @@
 export const clinicInfo = {
-  name: "Dr. Yasmin Dental Clinic",
+  name: "Supreme Multi-Speciality Dental Centre",
   tagline: "Your Trusted Smile Partner in Vadapalani, Chennai",
   mission:
     "To make world-class dental care accessible to every family in Vadapalani — compassionate, comfortable, and always available.",
-  addressLine1: "122, Arcot Rd, opposite Murugan Temple Arch",
-  addressLine2: "Sarvamangala Colony, Vadapalani, Chennai, Tamil Nadu 600026",
-  shortAddress: "122, Arcot Rd, Vadapalani, Chennai 600026",
+  addressLine1: "1/5, Kodambakkam Saidapet Road, Near Vadapalani Masjid",
+  addressLine2: "Vadapalani, Chennai – 600026.",
+  shortAddress: "1/5, Kodambakkam Saidapet Road, Vadapalani, Chennai – 600026. Near Vadapalani Masjid",
   phone: "+91 9551118120",
-  email: "info@dryasmindental.com",
+  email: "info@supremedental.com",
   whatsapp: "https://wa.me/919551118120",
   mapsUrl:
-    "https://www.google.com/maps/place/Dr.+Yasmin+Dental+Clinic/@13.0499725,80.2130335,17z",
+    "https://www.google.com/maps/search/Supreme+Multi-Speciality+Dental+Centre/@13.0499134,80.2131861,17z",
   mapEmbedUrl:
-    "https://maps.google.com/maps?q=13.0499725,80.2130335&z=17&output=embed",
-  latitude: 13.0499725,
-  longitude: 80.2130335,
-  website: "https://dryasmindental.com",
+    "https://maps.google.com/maps?q=13.0499134,80.2131861&z=17&output=embed",
+  latitude: 13.0499134,
+  longitude: 80.2131861,
+  website: "https://supremedental.com",
   hours: "Open 24 Hours / 7 Days a Week",
 } as const;
 

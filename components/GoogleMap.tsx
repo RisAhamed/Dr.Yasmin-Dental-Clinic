@@ -33,7 +33,7 @@ export default function GoogleMap() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Dr. Yasmin Dental Clinic Location"
+            title="Supreme Multi-Speciality Dental Centre Location"
           />
         </div>
       </div>

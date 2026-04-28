@@ -26,7 +26,7 @@ const slides: Slide[] = [
   {
     image:
       "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1400&q=80",
-    heading: "Welcome to Dr. Yasmin Dental Clinic",
+    heading: "Welcome to Supreme Multi-Speciality Dental Centre",
     subtext: "Comprehensive Dental Care — Open 24 Hours, 7 Days a Week",
     ctas: [
       { label: "Get Directions →", href: clinicInfo.mapsUrl, primary: true, external: true },
