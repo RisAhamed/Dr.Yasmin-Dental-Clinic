@@ -1,4 +1,4 @@
-import { Clock, IndianRupee, Microscope, UserCheck } from "lucide-react";
+import { Clock, HeartHandshake, Microscope, UserCheck } from "lucide-react";
 
 const items = [
   {
@@ -16,9 +16,9 @@ const items = [
     color: "text-teal-600",
   },
   {
-    title: "Affordable Pricing",
-    text: "Transparent fees with no hidden charges. Flexible payment options available.",
-    icon: IndianRupee,
+    title: "Patient-First Care",
+    text: "Clear communication, personalized plans, and supportive care for every patient.",
+    icon: HeartHandshake,
     bg: "bg-green-100",
     color: "text-green-600",
   },

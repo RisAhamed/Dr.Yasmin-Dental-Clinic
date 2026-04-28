@@ -64,11 +64,12 @@ export default function Navbar() {
 
           <div className="hidden md:block">
             <Link
-              href="/appointments"
+              href={clinicInfo.mapsUrl}
+              target="_blank"
               className="bg-[#0A7EA4] hover:bg-[#085f80] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300"
-              aria-label="Book appointment"
+              aria-label="Get directions on Google Maps"
             >
-              Book Appointment
+              Get Directions
             </Link>
           </div>
 
@@ -102,12 +103,13 @@ export default function Navbar() {
                 );
               })}
               <Link
-                href="/appointments"
+                href={clinicInfo.mapsUrl}
+                target="_blank"
                 onClick={() => setOpen(false)}
                 className="inline-flex justify-center bg-[#0A7EA4] text-white px-6 py-3 rounded-full font-semibold"
-                aria-label="Book appointment"
+                aria-label="Get directions on Google Maps"
               >
-                Book Appointment
+                Get Directions
               </Link>
             </div>
           </div>

@@ -31,11 +31,12 @@ export default function FloatingButtons() {
       </Link>
 
       <Link
-        href="/appointments"
+        href={clinicInfo.mapsUrl}
+        target="_blank"
         className="fixed bottom-6 left-6 z-50 block md:hidden px-5 py-3 rounded-full bg-[#0A7EA4] text-white font-semibold shadow-lg"
-        aria-label="Book now"
+        aria-label="Get directions on Google Maps"
       >
-        📅 Book Now
+        📍 Get Directions
       </Link>
 
       {showScrollTop && (

@@ -6,7 +6,7 @@ import { clinicInfo } from "@/lib/clinic";
 
 export const metadata: Metadata = {
   title: `Contact Us | ${clinicInfo.name}`,
-  description: `Contact ${clinicInfo.name} in Vadapalani, Chennai for appointments and 24/7 emergency dental care.`,
+  description: `Contact ${clinicInfo.name} in Vadapalani, Chennai for 24/7 emergency dental care and live clinic directions.`,
   alternates: { canonical: `${clinicInfo.website}/contact` },
 };
 

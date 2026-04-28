@@ -81,7 +81,6 @@ export default function RootLayout({
                 longitude: clinicInfo.longitude,
               },
               openingHours: "Mo-Su 00:00-24:00",
-              priceRange: "₹₹",
               hasMap: `https://maps.google.com/?q=${clinicInfo.latitude},${clinicInfo.longitude}`,
               sameAs: [
                 "https://www.facebook.com/dryasmindental",

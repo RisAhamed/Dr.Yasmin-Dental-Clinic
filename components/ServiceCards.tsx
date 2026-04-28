@@ -3,51 +3,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
-import {
-  Activity,
-  AlertCircle,
-  Anchor,
-  Brush,
-  Clock,
-  Crown,
-  GitBranch,
-  HeartPulse,
-  PenTool,
-  ScanLine,
-  Scissors,
-  Smile,
-  Sparkles,
-  Stethoscope,
-  Sun,
-  Zap,
-} from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 
 import type { Service, ServiceCategory } from "@/lib/service-types";
+import { clinicInfo } from "@/lib/clinic";
 import { serviceCategories } from "@/lib/service-types";
 
 type Props = {
   services: Service[];
   mode: "preview" | "full";
-};
-
-const iconMap = {
-  Activity,
-  AlertCircle,
-  Anchor,
-  Brush,
-  Clock,
-  Crown,
-  GitBranch,
-  HeartPulse,
-  PenTool,
-  ScanLine,
-  Scissors,
-  Smile,
-  Sparkles,
-  Stethoscope,
-  Sun,
-  Zap,
 };
 
 export default function ServiceCards({ services, mode }: Props) {
@@ -102,8 +66,6 @@ export default function ServiceCards({ services, mode }: Props) {
       <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <AnimatePresence>
           {filtered.map((service) => {
-            const DynamicIcon =
-              iconMap[service.iconName as keyof typeof iconMap] ?? Stethoscope;
             const isExpanded = expandedSlug === service.slug;
             const emergency = service.slug === "emergency-dental";
 
@@ -122,25 +84,13 @@ export default function ServiceCards({ services, mode }: Props) {
                 aria-label={service.title}
               >
                 <div className="h-52 relative overflow-hidden">
-                  {service.displayType === "IMAGE" && service.imageSrc ? (
-                    <Image
-                      src={service.imageSrc}
-                      alt={service.imageAlt ?? service.title}
-                      fill
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    />
-                  ) : (
-                    <div className="h-full flex items-center justify-center bg-slate-50">
-                      <div
-                        className={`w-16 h-16 rounded-full flex items-center justify-center ${
-                          service.iconBg ?? "bg-blue-100"
-                        }`}
-                      >
-                        <DynamicIcon className={service.iconColor ?? "text-[#0A7EA4]"} size={32} />
-                      </div>
-                    </div>
-                  )}
+                  <Image
+                    src={service.imageSrc}
+                    alt={service.imageAlt}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
                 </div>
 
                 <div className="p-6">
@@ -157,7 +107,6 @@ export default function ServiceCards({ services, mode }: Props) {
                   {mode === "full" && (
                     <div className="mt-4 pt-4 border-t border-slate-200 space-y-1 text-sm">
                       <p>⏱ Duration: {service.duration}</p>
-                      <p>💰 {service.price}</p>
                     </div>
                   )}
 
@@ -180,11 +129,12 @@ export default function ServiceCards({ services, mode }: Props) {
                         {isExpanded ? "Hide Details ▲" : "Know More ▼"}
                       </button>
                       <Link
-                        href={`/appointments?service=${service.slug}`}
+                        href={clinicInfo.mapsUrl}
+                        target="_blank"
                         className="px-4 py-2 rounded-full bg-[#0A7EA4] text-white font-semibold"
-                        aria-label={`Book ${service.title}`}
+                        aria-label={`Get directions for ${service.title}`}
                       >
-                        Book Now →
+                        Get Directions →
                       </Link>
                     </div>
                   )}
@@ -211,11 +161,12 @@ export default function ServiceCards({ services, mode }: Props) {
                           <p className="text-sm text-[#5A5A7A] mt-1">{service.whoNeeds}</p>
                           <p className="text-sm text-[#5A5A7A] mt-2">{service.note}</p>
                           <Link
-                            href={`/appointments?service=${service.slug}`}
+                            href={clinicInfo.mapsUrl}
+                            target="_blank"
                             className="inline-flex mt-5 w-full justify-center bg-[#0A7EA4] hover:bg-[#085f80] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300"
-                            aria-label={`Book ${service.title}`}
+                            aria-label={`Get directions for ${service.title}`}
                           >
-                            Book This Service
+                            Get Directions
                           </Link>
                         </div>
                       </motion.div>

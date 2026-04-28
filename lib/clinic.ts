@@ -2,7 +2,7 @@ export const clinicInfo = {
   name: "Dr. Yasmin Dental Clinic",
   tagline: "Your Trusted Smile Partner in Vadapalani, Chennai",
   mission:
-    "To make world-class dental care accessible to every family in Vadapalani — affordable, comfortable, and always available.",
+    "To make world-class dental care accessible to every family in Vadapalani — compassionate, comfortable, and always available.",
   addressLine1: "122, Arcot Rd, opposite Murugan Temple Arch",
   addressLine2: "Sarvamangala Colony, Vadapalani, Chennai, Tamil Nadu 600026",
   shortAddress: "122, Arcot Rd, Vadapalani, Chennai 600026",
@@ -24,5 +24,4 @@ export const sitePages = [
   "/services",
   "/about",
   "/contact",
-  "/appointments",
 ] as const;

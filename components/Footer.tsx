@@ -44,11 +44,12 @@ export default function Footer() {
                 Contact
               </Link>
               <Link
-                href="/appointments"
+                href={clinicInfo.mapsUrl}
+                target="_blank"
                 className="block hover:text-white"
-                aria-label="Book appointment"
+                aria-label="Get directions on Google Maps"
               >
-                Book Appointment
+                Get Directions
               </Link>
             </div>
           </div>

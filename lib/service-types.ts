@@ -7,22 +7,15 @@ export type ServiceCategory =
   | "Emergency"
   | "Diagnostic";
 
-export type ServiceDisplayType = "IMAGE" | "ICON";
-
 export type Service = {
   slug: string;
   category: ServiceCategory;
-  displayType: ServiceDisplayType;
-  imageSrc?: string;
-  imageAlt?: string;
-  iconName?: string;
-  iconColor?: string;
-  iconBg?: string;
+  imageSrc: string;
+  imageAlt: string;
   badgeColor: string;
   title: string;
   shortDesc: string;
   duration: string;
-  price: string;
   badgeExtra?: string;
   fullDesc: string;
   expect: string[];

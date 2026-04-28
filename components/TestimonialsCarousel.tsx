@@ -32,7 +32,7 @@ const testimonials = [
     name: "Anand Krishnamurthy",
     location: "Virugambakkam, Chennai",
     review:
-      "Got my smile makeover done — whitening plus veneers. The results are absolutely stunning. My confidence has gone through the roof. Worth every single rupee!",
+      "Got my smile makeover done — whitening plus veneers. The results are absolutely stunning. My confidence has gone through the roof. Truly worth it!",
     avatar: "AK",
     avatarBg: "bg-orange-500",
   },
@@ -40,7 +40,7 @@ const testimonials = [
     name: "Fatima Begum",
     location: "Vadapalani, Chennai",
     review:
-      "Very affordable pricing with no hidden charges. The doctor explained everything clearly before starting treatment. The location near Murugan Temple is very easy to find!",
+      "The doctor explained everything clearly before starting treatment. The location near Murugan Temple is very easy to find!",
     avatar: "FB",
     avatarBg: "bg-purple-500",
   },
@@ -80,7 +80,7 @@ const testimonials = [
     name: "Mohammed Irfan",
     location: "Saidapet, Chennai",
     review:
-      "The best part is complete transparency — no surprise bills. The doctor created a full treatment plan with costs upfront. I truly respect that honesty. Will always come back here!",
+      "The best part is complete transparency — the doctor created a full treatment plan upfront. I truly respect that honesty. Will always come back here!",
     avatar: "MI",
     avatarBg: "bg-cyan-600",
   },

@@ -6,14 +6,30 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
-const slides = [
+import { clinicInfo } from "@/lib/clinic";
+
+type SlideCta = {
+  label: string;
+  href: string;
+  primary: boolean;
+  external?: boolean;
+};
+
+type Slide = {
+  image: string;
+  heading: string;
+  subtext: string;
+  ctas: SlideCta[];
+};
+
+const slides: Slide[] = [
   {
     image:
       "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1400&q=80",
     heading: "Welcome to Dr. Yasmin Dental Clinic",
     subtext: "Comprehensive Dental Care — Open 24 Hours, 7 Days a Week",
     ctas: [
-      { label: "Book Appointment →", href: "/appointments", primary: true },
+      { label: "Get Directions →", href: clinicInfo.mapsUrl, primary: true, external: true },
       { label: "Our Services", href: "/services", primary: false },
     ],
   },
@@ -30,7 +46,7 @@ const slides = [
     heading: "Trusted by Thousands of Chennai Families",
     subtext: "Gentle, Affordable & Expert Dental Treatment for All Ages",
     ctas: [
-      { label: "Book Appointment →", href: "/appointments", primary: true },
+      { label: "Get Directions →", href: clinicInfo.mapsUrl, primary: true, external: true },
       { label: "View Testimonials", href: "/#testimonials", primary: false },
     ],
   },
@@ -88,6 +104,7 @@ export default function HeroSlider() {
               <Link
                 key={cta.label}
                 href={cta.href}
+                target={cta.external ? "_blank" : undefined}
                 className={
                   cta.primary
                     ? "bg-[#0A7EA4] hover:bg-[#085f80] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300"

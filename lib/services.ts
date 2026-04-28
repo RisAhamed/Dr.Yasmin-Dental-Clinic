@@ -2,7 +2,8 @@ import "server-only";
 
 import fs from "node:fs";
 import path from "node:path";
-import type { Service, ServiceCategory, ServiceDisplayType } from "@/lib/service-types";
+
+import type { Service, ServiceCategory } from "@/lib/service-types";
 
 const HOMEPAGE_ORDER = [
   "general-checkup",
@@ -13,41 +14,25 @@ const HOMEPAGE_ORDER = [
   "emergency-dental",
 ] as const;
 
-const IMAGE_ICON_FALLBACK: Record<
-  string,
-  { iconName: string; iconColor: string; iconBg: string }
-> = {
-  "general-checkup": {
-    iconName: "Stethoscope",
-    iconColor: "text-blue-600",
-    iconBg: "bg-blue-100",
-  },
-  "teeth-cleaning": {
-    iconName: "Brush",
-    iconColor: "text-blue-500",
-    iconBg: "bg-blue-100",
-  },
-  "root-canal": { iconName: "Zap", iconColor: "text-red-500", iconBg: "bg-red-100" },
-  "dental-implants": {
-    iconName: "Anchor",
-    iconColor: "text-gray-600",
-    iconBg: "bg-gray-100",
-  },
-  "teeth-whitening": {
-    iconName: "Sun",
-    iconColor: "text-yellow-500",
-    iconBg: "bg-yellow-100",
-  },
-  orthodontics: {
-    iconName: "GitBranch",
-    iconColor: "text-purple-500",
-    iconBg: "bg-purple-100",
-  },
-  "emergency-dental": {
-    iconName: "AlertCircle",
-    iconColor: "text-red-600",
-    iconBg: "bg-red-100",
-  },
+const SERVICE_IMAGE_MAP: Record<string, string> = {
+  "general-checkup": "tooth cheking iamge.png",
+  "teeth-cleaning": "Teeth Cleaning & Scaling.png.jpg",
+  "tooth-extraction": "tooth-extraction.png",
+  "tooth-filling": "Tooth Filling.png",
+  "root-canal": "root canal treatement.png",
+  "dental-implants": "dental implants.png",
+  "teeth-whitening": "Teeth Whitening & Bleaching.png",
+  veneers: "Porcelain Veneers.png.jpg",
+  "crowns-bridges": "Dental Crowns & Bridges.png",
+  orthodontics: "services images.png",
+  dentures: "Dentures — Full & Partial.png",
+  "gum-treatment": "Gum Disease Treatment.png",
+  "paediatric-dentistry": "dental sealants.png",
+  "smile-makeover": "dental chair image.png",
+  "sensitivity-treatment": "Teeth Sensitivity Treatment.png",
+  "dental-xrays": "Dental X-rays & Digital Diagnostics.png",
+  "tmj-treatment": "Jaw Pain & TMJ Treatment.png",
+  "emergency-dental": "toothe surgery.png",
 };
 
 function cleanText(value: string) {
@@ -63,35 +48,18 @@ function parseHomepagePosition(raw: string) {
   return posMatch ? Number(posMatch[1]) : undefined;
 }
 
-function localFileExists(relativePublicPath: string) {
-  const absolute = path.join(process.cwd(), "public", relativePublicPath);
-  return fs.existsSync(absolute);
-}
-
-function resolveImageSrc(slug: string, localImageRaw?: string, remoteImageRaw?: string) {
-  const checkedCandidates = new Set<string>();
-
-  if (localImageRaw) {
-    const normalized = localImageRaw
-      .replace(/^\/?public\//, "")
-      .replace(/^\/+/, "")
-      .trim();
-    if (normalized) {
-      checkedCandidates.add(normalized);
-    }
+function resolveMappedServiceImage(slug: string) {
+  const filename = SERVICE_IMAGE_MAP[slug];
+  if (!filename) {
+    return "/services/services images.png";
   }
 
-  for (const ext of ["jpg", "jpeg", "png", "webp"]) {
-    checkedCandidates.add(`services/${slug}.${ext}`);
+  const absolutePath = path.join(process.cwd(), "public", "services", filename);
+  if (fs.existsSync(absolutePath)) {
+    return `/services/${filename}`;
   }
 
-  for (const candidate of checkedCandidates) {
-    if (localFileExists(candidate)) {
-      return `/${candidate.replace(/\\/g, "/")}`;
-    }
-  }
-
-  return remoteImageRaw;
+  return "/services/services images.png";
 }
 
 function parseServiceBlock(block: string): Service | null {
@@ -138,42 +106,18 @@ function parseServiceBlock(block: string): Service | null {
   }
 
   const slug = String(data.slug);
-  const imageSrc = resolveImageSrc(
-    slug,
-    (data.local_image as string | undefined) ?? undefined,
-    (data.image_url as string | undefined) ?? undefined,
-  );
-
-  let displayType = (data.display_type as ServiceDisplayType | undefined) ?? "ICON";
-  let iconName = (data.icon_name as string | undefined) ?? undefined;
-  let iconColor = (data.icon_color as string | undefined) ?? undefined;
-  let iconBg = (data.icon_bg as string | undefined) ?? undefined;
-
-  if (displayType === "IMAGE" && !imageSrc) {
-    const fallback = IMAGE_ICON_FALLBACK[slug];
-    if (fallback) {
-      displayType = "ICON";
-      iconName = fallback.iconName;
-      iconColor = fallback.iconColor;
-      iconBg = fallback.iconBg;
-    }
-  }
-
+  const title = String(data.title);
   const showHomepageRaw = String(data.show_homepage ?? "NO");
+
   return {
     slug,
     category: String(data.category) as ServiceCategory,
-    displayType,
-    imageSrc: imageSrc ? cleanText(imageSrc) : undefined,
-    imageAlt: (data.image_alt as string | undefined) ?? `${data.title} service image`,
-    iconName,
-    iconColor,
-    iconBg,
+    imageSrc: resolveMappedServiceImage(slug),
+    imageAlt: `${title} at Dr. Yasmin Dental Clinic`,
     badgeColor: (data.badge_color as string | undefined) ?? "bg-blue-100 text-blue-700",
-    title: String(data.title),
+    title,
     shortDesc: String(data.short_desc ?? ""),
     duration: String(data.duration ?? ""),
-    price: String(data.price ?? ""),
     badgeExtra: (data.badge_extra as string | null | undefined) ?? undefined,
     fullDesc: String(data.full_desc ?? ""),
     expect: ((data.expect as string[] | undefined) ?? []).map(cleanText),
