@@ -60,6 +60,10 @@ export default function RootLayout({
           content="dental clinic Chennai, dentist Vadapalani, teeth cleaning Chennai, root canal Chennai, dental implants Vadapalani, best dentist Arcot Road"
         />
         <meta name="robots" content="index, follow" />
+        <meta
+          name="google-site-verification"
+          content="V7z08_4Lx_HcCK5zFX-MNmttJoKh8ilPhFiTwoX_BXw"
+        />
         <link rel="canonical" href="https://dr-yasmin-dental-clinic.vercel.app" />
         <meta property="og:title" content="Dr. Yasmin Dental Clinic Chennai" />
         <meta
