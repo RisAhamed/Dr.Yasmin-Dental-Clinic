@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Globe, MessageCircle, PhoneCall, Stethoscope } from "lucide-react";
+import Image from "next/image";
 
 import { clinicInfo } from "@/lib/clinic";
 
@@ -10,7 +11,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div>
             <div className="flex items-center gap-2 text-xl font-bold">
-              <Stethoscope />
+              <Image
+                src="/services/Images/WhatsApp Image 2026-05-01 at 12.41.19 PM.jpeg"
+                alt="Supreme Dental Logo"
+                width={40}
+                height={40}
+                className="rounded-md"
+              />
               <span>{clinicInfo.name}</span>
             </div>
             <p className="text-gray-400 mt-3">Your Smile, Our Priority</p>

@@ -50,6 +50,24 @@ const slides: Slide[] = [
       { label: "View Testimonials", href: "/#testimonials", primary: false },
     ],
   },
+  {
+    image: "/services/Images/Supreme%202.jpg.jpeg",
+    heading: "Step Inside Our Clinic",
+    subtext: "Modern infrastructure with advanced equipment for your comfort",
+    ctas: [
+      { label: "View Gallery →", href: "/#clinic-gallery", primary: true },
+      { label: "About Us", href: "/about", primary: false },
+    ],
+  },
+  {
+    image: "/services/Images/Supreme%203.jpg.jpeg",
+    heading: "Premium Dental Care in Vadapalani",
+    subtext: "State-of-the-art facility designed for your relaxation",
+    ctas: [
+      { label: "Get Directions →", href: clinicInfo.mapsUrl, primary: true, external: true },
+      { label: "Our Services", href: "/services", primary: false },
+    ],
+  },
 ] as const;
 
 export default function HeroSlider() {

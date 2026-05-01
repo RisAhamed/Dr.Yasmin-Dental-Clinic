@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 
+import ScrollReveal from "@/components/ui/ScrollReveal";
 import { clinicInfo } from "@/lib/clinic";
 
 export const metadata: Metadata = {
@@ -19,16 +20,18 @@ export default function AboutPage() {
 
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-          <Image
-            src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=700&q=80"
-            alt="Female dentist at Supreme Multi-Speciality Dental Centre Chennai"
-            width={700}
-            height={900}
-            className="rounded-2xl shadow-xl w-full h-auto object-cover"
-          />
+          <ScrollReveal direction="left">
+            <Image
+              src="/services/Images/doctor%20images.jpeg"
+              alt="Dr. Supriya at Supreme Multi-Speciality Dental Centre Chennai"
+              width={700}
+              height={900}
+              className="rounded-[16px] shadow-xl w-full h-auto object-cover"
+            />
+          </ScrollReveal>
 
           <div>
-            <h2 className="text-3xl font-bold text-[#1A1A2E]">About Our Clinic</h2>
+            <h2 className="text-3xl font-bold text-[#1A1A2E]">Meet Our Doctor</h2>
             <p className="text-[#5A5A7A] mt-4">
               Supreme Multi-Speciality Dental Centre has been serving the families of Vadapalani,
               Chennai for over 15 years. Located on Kodambakkam Saidapet Road, near Vadapalani
@@ -50,6 +53,42 @@ export default function AboutPage() {
                 <strong>Our Mission:</strong> {clinicInfo.mission}
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-[#F9FCFF]">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-[#1A1A2E] text-center mb-10">Our Clinic</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <ScrollReveal direction="up" delay={0}>
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
+                <Image
+                  src="/services/Images/clinic%20chair.jpeg"
+                  alt="State-of-the-Art Treatment Chair at Supreme Multi-Speciality Dental Centre"
+                  width={600}
+                  height={400}
+                  className="w-full h-[300px] object-cover"
+                />
+                <div className="p-4 text-center">
+                  <p className="text-[#1A1A2E] font-semibold">State-of-the-Art Treatment Chair</p>
+                </div>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal direction="up" delay={150}>
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
+                <Image
+                  src="/services/Images/clinic%20chair-2.jpeg"
+                  alt="Modern Dental Equipment at Supreme Multi-Speciality Dental Centre"
+                  width={600}
+                  height={400}
+                  className="w-full h-[300px] object-cover"
+                />
+                <div className="p-4 text-center">
+                  <p className="text-[#1A1A2E] font-semibold">State-of-the-Art Treatment Chair</p>
+                </div>
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>

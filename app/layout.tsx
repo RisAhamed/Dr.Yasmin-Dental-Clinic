@@ -51,6 +51,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.variable} ${inter.variable} h-full antialiased`}>
       <head>
+        <link
+          rel="icon"
+          href="/services/Images/WhatsApp Image 2026-05-01 at 12.41.19 PM.jpeg"
+          type="image/jpeg"
+        />
         <meta
           name="description"
           content="Supreme Multi-Speciality Dental Centre — Expert dental care in Vadapalani, Chennai with teeth cleaning, root canal, implants, whitening and emergency dental care."

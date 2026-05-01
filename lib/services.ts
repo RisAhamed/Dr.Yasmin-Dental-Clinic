@@ -17,22 +17,23 @@ const HOMEPAGE_ORDER = [
 const SERVICE_IMAGE_MAP: Record<string, string> = {
   "general-checkup": "tooth cheking iamge.png",
   "teeth-cleaning": "Teeth Cleaning & Scaling.png.jpg",
-  "tooth-extraction": "tooth-extraction.png",
   "tooth-filling": "Tooth Filling.png",
+  "tooth-extraction": "tooth-extraction.png",
   "root-canal": "root canal treatement.png",
-  "dental-implants": "dental implants.png",
+  "dental-implants": "dental implants 2.png",
   "teeth-whitening": "Teeth Whitening & Bleaching.png",
   veneers: "Porcelain Veneers.png.jpg",
   "crowns-bridges": "Dental Crowns & Bridges.png",
-  orthodontics: "services images.png",
+  orthodontics: "WhatsApp Image 2026-05-01 at 12.41.16 PM.jpeg",
+  "clear-aligners": "WhatsApp Image 2026-05-01 at 12.41.16 PM (1).jpeg",
   dentures: "Dentures — Full & Partial.png",
   "gum-treatment": "Gum Disease Treatment.png",
-  "paediatric-dentistry": "dental sealants.png",
-  "smile-makeover": "dental chair image.png",
+  "paediatric-dentistry": "WhatsApp Image 2026-05-01 at 12.41.18 PM (2).jpeg",
+  "smile-makeover": "Porcelain Veneers.png.jpg",
   "sensitivity-treatment": "Teeth Sensitivity Treatment.png",
   "dental-xrays": "Dental X-rays & Digital Diagnostics.png",
   "tmj-treatment": "Jaw Pain & TMJ Treatment.png",
-  "emergency-dental": "toothe surgery.png",
+  "emergency-dental": "Supreme 3.jpg.jpeg",
 };
 
 function cleanText(value: string) {
@@ -57,6 +58,11 @@ function resolveMappedServiceImage(slug: string) {
   const absolutePath = path.join(process.cwd(), "public", "services", filename);
   if (fs.existsSync(absolutePath)) {
     return `/services/${filename}`;
+  }
+
+  const imagesPath = path.join(process.cwd(), "public", "services", "Images", filename);
+  if (fs.existsSync(imagesPath)) {
+    return `/services/Images/${filename}`;
   }
 
   return "/services/services images.png";
