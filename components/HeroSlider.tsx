@@ -107,7 +107,7 @@ export default function HeroSlider() {
         </motion.div>
       </AnimatePresence>
 
-      <div className="relative z-10 min-h-[85vh] md:min-h-screen flex items-center justify-center px-6 text-center">
+      <div className="relative z-10 min-h-[85vh] md:min-h-screen flex items-center justify-center px-4 md:px-6 text-center">
         <motion.div
           key={slide.heading}
           initial={{ opacity: 0, y: 18 }}
@@ -115,9 +115,19 @@ export default function HeroSlider() {
           transition={{ duration: 0.6 }}
           className="max-w-4xl"
         >
-          <h1 className="text-white font-bold text-4xl md:text-6xl">{slide.heading}</h1>
-          <p className="text-gray-200 text-lg md:text-2xl mt-4">{slide.subtext}</p>
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <h1
+            className="text-white font-bold"
+            style={{ fontSize: "clamp(24px, 6vw, 56px)", lineHeight: 1.3 }}
+          >
+            {slide.heading}
+          </h1>
+          <p
+            className="text-gray-200 mt-4"
+            style={{ fontSize: "clamp(14px, 1.5vw, 24px)", lineHeight: 1.7 }}
+          >
+            {slide.subtext}
+          </p>
+          <div className="mt-8 flex flex-col md:flex-row justify-center gap-3 md:gap-4">
             {slide.ctas.map((cta) => (
               <Link
                 key={cta.label}
@@ -125,8 +135,8 @@ export default function HeroSlider() {
                 target={cta.external ? "_blank" : undefined}
                 className={
                   cta.primary
-                    ? "bg-[#0A7EA4] hover:bg-[#085f80] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300"
-                    : "border border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition-all duration-300"
+                    ? "bg-[#0A7EA4] hover:bg-[#085f80] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 min-h-[44px] flex items-center justify-center"
+                    : "border border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition-all duration-300 min-h-[44px] flex items-center justify-center"
                 }
                 aria-label={cta.label}
               >

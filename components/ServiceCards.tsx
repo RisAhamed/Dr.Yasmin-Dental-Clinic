@@ -42,28 +42,33 @@ export default function ServiceCards({ services, mode }: Props) {
   }, [category, mode, services]);
 
   return (
-    <section className="max-w-7xl mx-auto px-6">
+    <section className="max-w-7xl mx-auto px-4 md:px-6">
       {mode === "full" && (
-        <div className="mb-10 flex flex-wrap items-center gap-3">
-          {serviceCategories.map((item) => (
-            <button
-              key={item}
-              type="button"
-              onClick={() => setCategory(item)}
-              className={`px-4 py-2 rounded-full border transition-all duration-300 ${
-                category === item
-                  ? "bg-[#0A7EA4] text-white border-[#0A7EA4]"
-                  : "bg-white border-gray-300 text-gray-600 hover:border-[#0A7EA4]"
-              }`}
-              aria-label={`Filter ${item} services`}
-            >
-              {item}
-            </button>
-          ))}
+        <div className="mb-6 md:mb-10 overflow-x-auto pb-2">
+          <div className="flex flex-nowrap md:flex-wrap items-center gap-2 md:gap-3">
+            {serviceCategories.map((item) => (
+              <button
+                key={item}
+                type="button"
+                onClick={() => setCategory(item)}
+                className={`px-4 py-2 rounded-full border transition-all duration-300 flex-shrink-0 min-h-[44px] ${
+                  category === item
+                    ? "bg-[#0A7EA4] text-white border-[#0A7EA4]"
+                    : "bg-white border-gray-300 text-gray-600 hover:border-[#0A7EA4]"
+                }`}
+                aria-label={`Filter ${item} services`}
+              >
+                {item}
+              </button>
+            ))}
+          </div>
         </div>
       )}
 
-      <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <motion.div
+        layout
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8"
+      >
         <AnimatePresence>
           {filtered.map((service) => {
             const isExpanded = expandedSlug === service.slug;
@@ -78,12 +83,12 @@ export default function ServiceCards({ services, mode }: Props) {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -16 }}
                 whileHover={{ y: -6, scale: 1.01 }}
-                className={`bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-slate-100 ${
+                className={`bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-slate-100 ${
                   emergency && mode === "preview" ? "border-2 border-red-500" : ""
                 }`}
                 aria-label={service.title}
               >
-                <div className="h-52 relative overflow-hidden">
+                <div className="h-[200px] relative overflow-hidden">
                   <Image
                     src={service.imageSrc}
                     alt={service.imageAlt}
@@ -93,16 +98,26 @@ export default function ServiceCards({ services, mode }: Props) {
                   />
                 </div>
 
-                <div className="p-6">
+                <div className="p-4 md:p-5">
                   <span
-                    className={`inline-flex px-3 py-1 text-xs font-semibold rounded-full ${service.badgeColor} ${
+                    className={`inline-flex px-2.5 py-1 text-[11px] font-semibold rounded-full ${service.badgeColor} ${
                       service.slug === "emergency-dental" ? "animate-pulse" : ""
                     }`}
                   >
                     {service.category}
                   </span>
-                  <h2 className="mt-4 text-xl font-bold text-[#1A1A2E]">{service.title}</h2>
-                  <p className="text-[#5A5A7A] text-sm mt-2">{service.shortDesc}</p>
+                  <h2
+                    className="mt-3 md:mt-4 font-bold text-[#1A1A2E]"
+                    style={{ fontSize: "clamp(15px, 2vw, 18px)", lineHeight: 1.3 }}
+                  >
+                    {service.title}
+                  </h2>
+                  <p
+                    className="text-[#5A5A7A] mt-2"
+                    style={{ fontSize: "clamp(13px, 1.5vw, 14px)", lineHeight: 1.6 }}
+                  >
+                    {service.shortDesc}
+                  </p>
 
                   {mode === "full" && (
                     <div className="mt-4 pt-4 border-t border-slate-200 space-y-1 text-sm">
@@ -119,11 +134,11 @@ export default function ServiceCards({ services, mode }: Props) {
                       Learn More →
                     </Link>
                   ) : (
-                    <div className="mt-5 flex items-center gap-3">
+                    <div className="mt-4 md:mt-5 flex flex-wrap items-center gap-2 md:gap-3">
                       <button
                         type="button"
                         onClick={() => setExpandedSlug(isExpanded ? null : service.slug)}
-                        className="px-4 py-2 rounded-full border border-[#0A7EA4] text-[#0A7EA4] font-semibold"
+                        className="px-4 py-2 rounded-full border border-[#0A7EA4] text-[#0A7EA4] font-semibold min-h-[44px]"
                         aria-label={`Know more about ${service.title}`}
                       >
                         {isExpanded ? "Hide Details ▲" : "Know More ▼"}
@@ -131,7 +146,7 @@ export default function ServiceCards({ services, mode }: Props) {
                       <Link
                         href={clinicInfo.mapsUrl}
                         target="_blank"
-                        className="px-4 py-2 rounded-full bg-[#0A7EA4] text-white font-semibold"
+                        className="px-4 py-2 rounded-full bg-[#0A7EA4] text-white font-semibold min-h-[44px] flex items-center"
                         aria-label={`Get directions for ${service.title}`}
                       >
                         Get Directions →
@@ -149,7 +164,7 @@ export default function ServiceCards({ services, mode }: Props) {
                         exit={{ height: 0, opacity: 0 }}
                         className="overflow-hidden border-t border-slate-200 bg-slate-50"
                       >
-                        <div className="p-6">
+                        <div className="p-4 md:p-6">
                           <p className="text-[#5A5A7A]">{service.fullDesc}</p>
                           <h3 className="font-semibold mt-4">What to expect</h3>
                           <ul className="list-disc pl-6 text-sm text-[#5A5A7A] space-y-1 mt-2">

@@ -50,28 +50,38 @@ export default function HomePage() {
     <>
       <HeroSlider />
 
-      <section className="py-12 bg-[#E8F4FD]">
-        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <section className="py-8 md:py-12 bg-[#E8F4FD]">
+        <div className="max-w-6xl mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {quickCards.map((card) => {
             const Icon = card.icon;
             return (
               <article
                 key={card.title}
-                className="bg-white rounded-2xl shadow-md p-8 text-center hover:shadow-xl border-t-4 border-[#0A7EA4]"
+                className="bg-white rounded-xl md:rounded-2xl shadow-md p-6 md:p-8 text-center hover:shadow-xl border-t-4 border-[#0A7EA4]"
               >
                 <div className="relative inline-flex">
-                  <Icon size={48} color={card.emergency ? "#e11d48" : "#0A7EA4"} />
+                  <Icon size={40} color={card.emergency ? "#e11d48" : "#0A7EA4"} />
                   {card.emergency && (
                     <span className="absolute -top-2 -right-3 text-xs bg-red-600 text-white px-2 py-0.5 rounded-full">
                       24/7
                     </span>
                   )}
                 </div>
-                <h2 className="mt-4 text-xl font-bold">{card.title}</h2>
-                <p className="mt-3 text-[#5A5A7A]">{card.text}</p>
+                <h2
+                  className="mt-4 font-bold"
+                  style={{ fontSize: "clamp(16px, 2vw, 20px)", lineHeight: 1.3 }}
+                >
+                  {card.title}
+                </h2>
+                <p
+                  className="mt-3 text-[#5A5A7A]"
+                  style={{ fontSize: "clamp(13px, 1.5vw, 15px)", lineHeight: 1.6 }}
+                >
+                  {card.text}
+                </p>
                 <Link
                   href={card.link}
-                  className={`inline-flex mt-4 font-semibold ${
+                  className={`inline-flex mt-4 font-semibold min-h-[44px] flex items-center ${
                     card.emergency ? "text-red-600" : "text-[#0A7EA4]"
                   }`}
                   aria-label={card.title}
@@ -86,20 +96,28 @@ export default function HomePage() {
 
       <SectionDivider />
 
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold">Our Dental Services</h2>
-          <p className="text-[#5A5A7A] mt-3">
+      <section className="py-12 md:py-16 lg:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
+          <h2
+            className="font-bold"
+            style={{ fontSize: "clamp(22px, 3.5vw, 36px)", lineHeight: 1.4 }}
+          >
+            Our Dental Services
+          </h2>
+          <p
+            className="text-[#5A5A7A] mt-3"
+            style={{ fontSize: "clamp(14px, 1.5vw, 18px)", lineHeight: 1.6 }}
+          >
             Expert care for every dental need — from routine to advanced
           </p>
         </div>
-        <div className="mt-12">
+        <div className="mt-8 md:mt-12">
           <ServiceCards services={homepageServices} mode="preview" />
         </div>
-        <div className="text-center mt-10">
+        <div className="text-center mt-8 md:mt-10">
           <Link
             href="/services"
-            className="bg-[#0A7EA4] hover:bg-[#085f80] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300"
+            className="bg-[#0A7EA4] hover:bg-[#085f80] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 min-h-[44px] inline-flex items-center"
             aria-label="View all 18 services"
           >
             View All 18 Services →

@@ -43,13 +43,19 @@ export default function ClinicGallery() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section id="clinic-gallery" className="py-20 bg-[#F9FCFF]">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1A1A2E]">
+    <section id="clinic-gallery" className="py-12 md:py-16 lg:py-20 bg-[#F9FCFF]">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        <div className="text-center mb-8 md:mb-12">
+          <h2
+            className="font-bold text-[#1A1A2E]"
+            style={{ fontSize: "clamp(22px, 3.5vw, 36px)", lineHeight: 1.4 }}
+          >
             Step Inside Our Clinic
           </h2>
-          <p className="text-[#5A5A7A] mt-3 max-w-2xl mx-auto">
+          <p
+            className="text-[#5A5A7A] mt-3 max-w-2xl mx-auto"
+            style={{ fontSize: "clamp(14px, 1.5vw, 18px)", lineHeight: 1.6 }}
+          >
             Modern infrastructure, advanced equipment, and a warm environment
             designed for your comfort.
           </p>
@@ -69,7 +75,7 @@ export default function ClinicGallery() {
                   delay: index * 0.1,
                   ease: [0.16, 1, 0.3, 1],
                 }}
-                className={`relative group overflow-hidden rounded-2xl ${
+                className={`relative group overflow-hidden rounded-xl md:rounded-2xl ${
                   isLarge ? "md:row-span-2" : ""
                 }`}
                 onMouseEnter={() => setHoveredIndex(index)}
@@ -80,7 +86,7 @@ export default function ClinicGallery() {
                   alt={image.alt}
                   width={600}
                   height={isLarge ? 800 : 400}
-                  className={`w-full h-full object-cover transition-transform duration-35 ${
+                  className={`w-full h-full object-cover transition-transform duration-300 ${
                     hoveredIndex === index ? "scale-104" : ""
                   }`}
                   style={
@@ -90,16 +96,19 @@ export default function ClinicGallery() {
                   }
                 />
                 <div
-                  className={`absolute inset-0 bg-black/25 transition-opacity duration-35 ${
+                  className={`absolute inset-0 bg-black/25 transition-opacity duration-300 ${
                     hoveredIndex === index ? "opacity-100" : "opacity-0"
                   }`}
                 />
                 <div
-                  className={`absolute inset-0 flex items-center justify-center transition-opacity duration-35 ${
+                  className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${
                     hoveredIndex === index ? "opacity-100" : "opacity-0"
                   }`}
                 >
-                  <span className="text-white font-semibold text-lg">
+                  <span
+                    className="text-white font-semibold"
+                    style={{ fontSize: "clamp(14px, 2vw, 18px)" }}
+                  >
                     {image.label}
                   </span>
                 </div>

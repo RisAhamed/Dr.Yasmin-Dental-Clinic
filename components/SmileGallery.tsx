@@ -39,13 +39,19 @@ export default function SmileGallery() {
   const shouldReduceMotion = useReducedMotion();
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1A1A2E]">
+    <section className="py-12 md:py-16 lg:py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        <div className="text-center mb-8 md:mb-12">
+          <h2
+            className="font-bold text-[#1A1A2E]"
+            style={{ fontSize: "clamp(22px, 3.5vw, 36px)", lineHeight: 1.4 }}
+          >
             Real Results from Our Patients
           </h2>
-          <p className="text-[#5A5A7A] mt-3 max-w-2xl mx-auto">
+          <p
+            className="text-[#5A5A7A] mt-3 max-w-2xl mx-auto"
+            style={{ fontSize: "clamp(14px, 1.5vw, 18px)", lineHeight: 1.6 }}
+          >
             Transform your smile with our expert dental care
           </p>
         </div>

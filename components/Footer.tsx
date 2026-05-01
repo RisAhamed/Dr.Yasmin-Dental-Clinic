@@ -6,11 +6,11 @@ import { clinicInfo } from "@/lib/clinic";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0D1B2A] text-white py-16 mt-auto">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+    <footer className="bg-[#0D1B2A] text-white py-12 md:py-16 mt-auto">
+      <div className="mx-auto max-w-7xl px-4 md:px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
           <div>
-            <div className="flex items-center gap-2 text-xl font-bold">
+            <div className="flex items-center gap-2 text-lg md:text-xl font-bold">
               <Image
                 src="/services/Images/WhatsApp Image 2026-05-01 at 12.41.19 PM.jpeg"
                 alt="Supreme Dental Logo"
@@ -23,13 +23,13 @@ export default function Footer() {
             <p className="text-gray-400 mt-3">Your Smile, Our Priority</p>
             <p className="text-sm text-green-400 mt-2">🕐 Open 24/7 — Emergency Care Available</p>
             <div className="flex items-center gap-4 mt-4">
-              <Link href="#" className="hover:text-[#00B4D8]" aria-label="Facebook">
+              <Link href="#" className="hover:text-[#00B4D8] min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Facebook">
                 <Globe />
               </Link>
-              <Link href="#" className="hover:text-[#00B4D8]" aria-label="Instagram">
+              <Link href="#" className="hover:text-[#00B4D8] min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Instagram">
                 <PhoneCall />
               </Link>
-              <Link href={clinicInfo.whatsapp} className="hover:text-[#00B4D8]" aria-label="WhatsApp">
+              <Link href={clinicInfo.whatsapp} className="hover:text-[#00B4D8] min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="WhatsApp">
                 <MessageCircle />
               </Link>
             </div>
@@ -38,22 +38,22 @@ export default function Footer() {
           <div>
             <h3 className="text-[#00B4D8] font-semibold mb-4">Quick Links</h3>
             <div className="space-y-2 text-gray-300">
-              <Link href="/" className="block hover:text-white" aria-label="Go to home">
+              <Link href="/" className="block hover:text-white min-h-[44px]" aria-label="Go to home">
                 Home
               </Link>
-              <Link href="/services" className="block hover:text-white" aria-label="Go to services">
+              <Link href="/services" className="block hover:text-white min-h-[44px]" aria-label="Go to services">
                 Services
               </Link>
-              <Link href="/about" className="block hover:text-white" aria-label="Go to about">
+              <Link href="/about" className="block hover:text-white min-h-[44px]" aria-label="Go to about">
                 About Us
               </Link>
-              <Link href="/contact" className="block hover:text-white" aria-label="Go to contact">
+              <Link href="/contact" className="block hover:text-white min-h-[44px]" aria-label="Go to contact">
                 Contact
               </Link>
               <Link
                 href={clinicInfo.mapsUrl}
                 target="_blank"
-                className="block hover:text-white"
+                className="block hover:text-white min-h-[44px]"
                 aria-label="Get directions on Google Maps"
               >
                 Get Directions
@@ -85,7 +85,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-10 pt-6 text-center text-gray-500 text-sm">
+        <div className="border-t border-gray-700 mt-8 md:mt-10 pt-6 text-center text-gray-500 text-sm">
           © 2025 {clinicInfo.name}. All Rights Reserved. Designed with ❤️ in Chennai.
         </div>
       </div>
