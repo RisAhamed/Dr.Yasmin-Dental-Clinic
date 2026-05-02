@@ -10,7 +10,7 @@ const items = [
   },
   {
     title: "Expert Dentists",
-    text: "Experienced, qualified dental professionals with 15+ years of expertise.",
+    text: "Experienced, qualified dental professionals with 30+ years of expertise.",
     icon: UserCheck,
     bg: "bg-teal-100",
     color: "text-teal-600",

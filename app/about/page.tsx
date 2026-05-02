@@ -24,7 +24,7 @@ export default function AboutPage() {
           className="mt-3"
           style={{ fontSize: "clamp(14px, 1.5vw, 18px)", lineHeight: 1.6 }}
         >
-          15+ Years of Trusted Dental Care in Vadapalani, Chennai
+          30+ Years of Trusted Dental Care in Vadapalani, Chennai
         </p>
       </section>
 
@@ -50,7 +50,7 @@ export default function AboutPage() {
             </h2>
             <p className="text-[#5A5A7A] mt-4" style={{ fontSize: "clamp(14px, 1.5vw, 16px)", lineHeight: 1.7 }}>
               Supreme Multi-Speciality Dental Centre has been serving the families of Vadapalani,
-              Chennai for over 15 years. Located on Kodambakkam Saidapet Road, near Vadapalani
+              Chennai for over 30+ years. Located on Kodambakkam Saidapet Road, near Vadapalani
               Masjid, our clinic is a trusted name in dental healthcare.
             </p>
             <p className="text-[#5A5A7A] mt-4" style={{ fontSize: "clamp(14px, 1.5vw, 16px)", lineHeight: 1.7 }}>

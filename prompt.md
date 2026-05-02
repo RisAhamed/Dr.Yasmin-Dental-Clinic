@@ -1,11 +1,11 @@
 =======================================================================
-  DR. YASMIN DENTAL CLINIC — COMPLETE WEB DEVELOPMENT PROMPT
+  Supreme Multi-Speciality Dental Centre — COMPLETE WEB DEVELOPMENT PROMPT
   Template Reference: levitasdentalclinic.com layout style
   Deploy Target: Vercel | Framework: Next.js 14 + Tailwind CSS
 =======================================================================
 
 You are an expert full-stack web developer. Build a COMPLETE, modern,
-fully responsive multi-page dental clinic website for "Dr. Yasmin Dental
+fully responsive multi-page dental clinic website for "Supreme Multi-Speciality Dental Centre
 Clinic" located in Vadapalani, Chennai, Tamil Nadu, India.
 
 The website must be production-ready and deployable to Vercel using
@@ -16,17 +16,15 @@ components, pages, and configs needed to run this project from scratch.
  CLINIC INFORMATION — USE THIS EXACT DATA ACROSS ALL PAGES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Clinic Name    : Dr. Yasmin Dental Clinic
+Clinic Name    : Supreme Multi-Speciality Dental Centre
 Tagline        : Your Trusted Smile Partner in Vadapalani, Chennai
-Address        : 122, Arcot Rd, opposite Murugan Temple Arch,
-                 Sarvamangala Colony, Vadapalani, Chennai,
-                 Tamil Nadu 600026
+Address        : 1/5, Kodambakkam Saidapet Road, Vadapalani, Chennai – 600026. Near Vadapalani Masjid
 Working Hours  : Open 24 Hours / 7 Days a Week (No Holidays)
 Phone          : +91 9551118120  
-Email          : info@dryasmindental.com
+Email          : 786supreme.dental@gmail.com
 WhatsApp       : https://wa.me/919551118120
-Google Maps    : https://www.google.com/maps/place/Dr.+Yasmin+Dental+Clinic/@13.0499725,80.2130335,17z
-Coordinates    : Latitude 13.0499725 | Longitude 80.2130335
+Google Maps    : https://www.google.com/maps/search/Supreme+Multi-Speciality+Dental+Centre/@13.0499134,80.2131861,17z
+Coordinates    : Latitude 13.0499134 | Longitude 80.2131861
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  TECH STACK — USE EXACTLY THESE
@@ -64,7 +62,7 @@ Divider Color      : #E2E8F0
  PROJECT FILE STRUCTURE — GENERATE ALL THESE FILES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-dr-yasmin-dental/
+supreme-dental/
 ├── app/
 │   ├── layout.tsx              ← Root layout: Navbar + Footer + SEO metadata
 │   ├── page.tsx                ← Homepage (/)
@@ -103,11 +101,11 @@ Structure:
 - TOP INFO BAR (thin strip above main nav):
   Background: #0A7EA4 | Text: white | height: 36px
   Left side: "📞 24/7 Emergency: +91 9551118120"
-  Right side: "📍 122, Arcot Rd, Vadapalani, Chennai 600026"
+  Right side: "📍 1/5, Kodambakkam Saidapet Road, Vadapalani, Chennai 600026"
 
 - MAIN NAVBAR:
   Background: white | sticky top-0 z-50 | shadow on scroll
-  LEFT  → Tooth icon (Lucide <Stethoscope />) + "Dr. Yasmin Dental Clinic"
+  LEFT  → Tooth icon (Lucide <Stethoscope />) + "Supreme Multi-Speciality Dental Centre"
            (bold, text-[#0A7EA4], text-xl)
   CENTER → Nav links: Home | Services | About | Contact
            (text-gray-700 hover:text-[#0A7EA4] font-medium transition)
@@ -128,7 +126,7 @@ Structure:
 
 SLIDE 1:
   bg image : https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1400&q=80
-  Heading  : "Welcome to Dr. Yasmin Dental Clinic"
+  Heading  : "Welcome to Supreme Multi-Speciality Dental Centre"
   Subtext  : "Comprehensive Dental Care — Open 24 Hours, 7 Days a Week"
   Buttons  : [Book Appointment →] (primary blue pill)
              [Our Services] (white outline pill)
@@ -198,7 +196,7 @@ SERVICES (9 total):
 
 1. General Dentistry
    Image: https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80
-   Alt  : "General dentistry check-up at Dr Yasmin Dental Clinic Vadapalani"
+   Alt  : "General dentistry check-up at Supreme Multi-Speciality Dental Centre Vadapalani"
    Desc : "Regular check-ups, professional cleaning, tooth-coloured fillings,
            and digital X-rays to keep your oral health in perfect shape."
 
@@ -340,7 +338,7 @@ Avatar   : "KS" on bg-teal-500
 
 [3]
 Name     : Meena Lakshmi
-Location : Sarvamangala Colony, Chennai
+Location : Vadapalani, Chennai
 Stars    : ★★★★★
 Review   : "My children absolutely love coming here. The doctor is so
             gentle and patient with kids. Teeth cleaning done in just
@@ -415,21 +413,21 @@ Avatar   : "MI" on bg-cyan-600
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 HERO BANNER: bg-[#0A7EA4] py-20 text-white text-center
-  Heading: "About Dr. Yasmin Dental Clinic"
-  Subtext: "15+ Years of Trusted Dental Care in Vadapalani, Chennai"
+  Heading: "About Supreme Multi-Speciality Dental Centre"
+  Subtext: "30+ Years of Trusted Dental Care in Vadapalani, Chennai"
 
 MAIN CONTENT — two-column split:
 LEFT  : next/image
         src: https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=700&q=80
-        alt: "Female dentist at Dr Yasmin Dental Clinic Chennai"
+        alt: "Female dentist at Supreme Multi-Speciality Dental Centre Chennai"
         className: rounded-2xl shadow-xl w-full h-auto object-cover
 
 RIGHT : Text content (prose)
         Heading: "About Our Clinic"
-        Para 1: "Dr. Yasmin Dental Clinic has been serving the families
+        Para 1: "Supreme Multi-Speciality Dental Centre has been serving the families
         of Vadapalani, Chennai for over 15 years. Located on Arcot Road,
         opposite the iconic Murugan Temple Arch, our clinic is a trusted
-        name in dental healthcare across Sarvamangala Colony."
+        name in dental healthcare across Vadapalani."
 
         Para 2: "We provide a complete range of dental services — from
         simple check-ups and cleaning to advanced implants and smile
@@ -446,18 +444,18 @@ MISSION BOX (below text, teal bg-[#0A7EA4] rounded-2xl p-6 text-white):
 
   Google Map iframe (below info):
   <iframe
-    src="https://maps.google.com/maps?q=13.0499725,80.2130335&z=17&output=embed"
+    src="https://maps.google.com/maps?q=13.0499134,80.2131861&z=17&output=embed"
     width="100%"
     height="300"
     style={{ border: 0 }}
     allowFullScreen
     loading="lazy"
     referrerPolicy="no-referrer-when-downgrade"
-    title="Dr. Yasmin Dental Clinic Location"
+    title="Supreme Multi-Speciality Dental Centre Location"
   />
 
   "Get Directions" button:
-  href="https://www.google.com/maps/place/Dr.+Yasmin+Dental+Clinic/@13.0499725,80.2130335,17z"
+  href="https://www.google.com/maps/search/Supreme+Multi-Speciality+Dental+Centre/@13.0499134,80.2131861,17z"
   target="_blank"
   Style: outline primary blue, full width
 
@@ -467,19 +465,19 @@ MISSION BOX (below text, teal bg-[#0A7EA4] rounded-2xl p-6 text-white):
 
 SECTION 1 — Full-width Google Maps embed (h-[500px]):
   <iframe
-    src="https://maps.google.com/maps?q=13.0499725,80.2130335&z=17&output=embed"
+    src="https://maps.google.com/maps?q=13.0499134,80.2131861&z=17&output=embed"
     width="100%" height="500"
     style={{ border: 0 }}
     allowFullScreen loading="lazy"
-    title="Dr. Yasmin Dental Clinic on Google Maps"
+    title="Supreme Multi-Speciality Dental Centre on Google Maps"
   />
 
 SECTION 2 — 3-column contact info cards (below map, py-16):
 Card 1 — Location:
   Icon: <MapPin size={40} color="#0A7EA4" />
   Title: "Our Address"
-  Text: 122, Arcot Rd, opposite Murugan Temple Arch,
-        Sarvamangala Colony, Vadapalani, Chennai 600026
+  Text: 1/5, Kodambakkam Saidapet Road, Near Vadapalani Masjid,
+        Vadapalani, Vadapalani, Chennai 600026
   Link: "View on Google Maps →"
 
 Card 2 — Phone:
@@ -503,7 +501,7 @@ Background: #0D1B2A | Text: white and gray-300 | Padding: py-16
 Grid: grid-cols-1 md:grid-cols-4 gap-10
 
 COL 1 — Brand:
-  Logo: Tooth icon + "Dr. Yasmin Dental Clinic" (text-white text-xl bold)
+  Logo: Tooth icon + "Supreme Multi-Speciality Dental Centre" (text-white text-xl bold)
   Tagline: "Your Smile, Our Priority" (text-gray-400)
   "🕐 Open 24/7 — Emergency Care Available" (text-sm text-green-400)
   Social icons row: Facebook | Instagram | WhatsApp
@@ -522,14 +520,14 @@ COL 3 — Our Services:
 
 COL 4 — Contact Details:
   Heading: "Contact Us" (text-[#00B4D8] font-semibold mb-4)
-  📍 122, Arcot Rd, Vadapalani, Chennai 600026
+  📍 1/5, Kodambakkam Saidapet Road, Vadapalani, Chennai 600026
   📞 +91 9551118120
-  ✉️ info@dryasmindental.com
+  ✉️ info@supremedental.com
   🕐 Open 24 Hours / 7 Days a Week
 
 BOTTOM BAR:
   border-t border-gray-700 mt-10 pt-6 text-center text-gray-500 text-sm
-  "© 2025 Dr. Yasmin Dental Clinic. All Rights Reserved.
+  "© 2026 Supreme Multi-Speciality Dental Centre. All Rights Reserved.
    Designed with ❤️ in Chennai."
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -562,9 +560,9 @@ BOTTOM BAR:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 export const metadata: Metadata = {
-  title: "Dr. Yasmin Dental Clinic | 24/7 Dentist in Vadapalani, Chennai",
+  title: "Supreme Multi-Speciality Dental Centre | 24/7 Dentist in Vadapalani, Chennai",
   description:
-    "Dr. Yasmin Dental Clinic — Expert dental care in Vadapalani, Chennai.
+    "Supreme Multi-Speciality Dental Centre — Expert dental care in Vadapalani, Chennai.
      Open 24 hours, 7 days a week. Services include general dentistry,
      cosmetic dentistry, root canal, dental implants, teeth whitening &
      emergency dental care. Book an appointment today.",
@@ -579,22 +577,22 @@ export const metadata: Metadata = {
     "emergency dentist Chennai open now",
     "cosmetic dentistry Vadapalani",
     "best dentist Arcot Road Chennai",
-    "dental clinic Sarvamangala Colony",
-    "Dr Yasmin dental clinic",
+    "dental clinic Vadapalani",
+    "Supreme Multi-Speciality Dental Centre",
     "paediatric dentist Chennai",
     "affordable dental treatment Chennai",
     "dental clinic open 24 hours Chennai"
   ],
   openGraph: {
-    title: "Dr. Yasmin Dental Clinic | 24/7 Dentist in Vadapalani Chennai",
+    title: "Supreme Multi-Speciality Dental Centre | 24/7 Dentist in Vadapalani Chennai",
     description: "Comprehensive dental care open 24/7 in Vadapalani, Chennai.",
-    url: "https://dryasmindental.com",
-    siteName: "Dr. Yasmin Dental Clinic",
+    url: "https://supremedental.com",
+    siteName: "Supreme Multi-Speciality Dental Centre",
     locale: "en_IN",
     type: "website",
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: "https://dryasmindental.com" },
+  alternates: { canonical: "https://supremedental.com" },
 };
 
 JSON-LD LOCAL BUSINESS SCHEMA — Add inside layout.tsx <head>:
@@ -605,13 +603,13 @@ JSON-LD LOCAL BUSINESS SCHEMA — Add inside layout.tsx <head>:
     __html: JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Dentist",
-      "name": "Dr. Yasmin Dental Clinic",
-      "image": "https://dryasmindental.com/og-image.jpg",
-      "url": "https://dryasmindental.com",
+      "name": "Supreme Multi-Speciality Dental Centre",
+      "image": "https://supremedental.com/og-image.jpg",
+      "url": "https://supremedental.com",
       "telephone": "+91 9551118120",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "122, Arcot Rd, opposite Murugan Temple Arch",
+        "streetAddress": "1/5, Kodambakkam Saidapet Road, Near Vadapalani Masjid",
         "addressLocality": "Vadapalani",
         "addressRegion": "Tamil Nadu",
         "postalCode": "600026",
@@ -619,15 +617,15 @@ JSON-LD LOCAL BUSINESS SCHEMA — Add inside layout.tsx <head>:
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 13.0499725,
-        "longitude": 80.2130335
+        "latitude": 13.0499134,
+        "longitude": 80.2131861
       },
       "openingHours": "Mo-Su 00:00-24:00",
       "priceRange": "₹₹",
-      "hasMap": "https://maps.google.com/?q=13.0499725,80.2130335",
+      "hasMap": "https://maps.google.com/?q=13.0499134,80.2131861",
       "sameAs": [
-        "https://www.facebook.com/dryasmindental",
-        "https://www.instagram.com/dryasmindental"
+        "https://www.facebook.com/supremedental",
+        "https://www.instagram.com/supremedental"
       ]
     })
   }}

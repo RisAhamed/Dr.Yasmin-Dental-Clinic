@@ -86,7 +86,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-700 mt-8 md:mt-10 pt-6 text-center text-gray-500 text-sm">
-          © 2025 {clinicInfo.name}. All Rights Reserved. Designed with ❤️ in Chennai.
+          © 2026 {clinicInfo.name}. All Rights Reserved. Designed with ❤️ in Chennai.
         </div>
       </div>
     </footer>

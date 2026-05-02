@@ -7,7 +7,7 @@ export const clinicInfo = {
   addressLine2: "Vadapalani, Chennai – 600026.",
   shortAddress: "1/5, Kodambakkam Saidapet Road, Vadapalani, Chennai – 600026. Near Vadapalani Masjid",
   phone: "+91 9551118120",
-  email: "info@supremedental.com",
+  email: "786supreme.dental@gmail.com",
   whatsapp: "https://wa.me/919551118120",
   mapsUrl:
     "https://www.google.com/maps/search/Supreme+Multi-Speciality+Dental+Centre/@13.0499134,80.2131861,17z",
