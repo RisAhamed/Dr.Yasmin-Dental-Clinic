@@ -23,6 +23,8 @@ export type Service = {
   note: string;
   showHomepage: boolean;
   homepagePosition?: number;
+  imageSrc2?: string;
+  imageAlt2?: string;
 };
 
 export const serviceCategories: Array<"All" | ServiceCategory> = [

@@ -26,7 +26,7 @@ const SERVICE_IMAGE_MAP: Record<string, string> = {
   "crowns-bridges": "Dental Crowns & Bridges.png",
   orthodontics: "WhatsApp Image 2026-05-01 at 12.41.16 PM.jpeg",
   "clear-aligners": "WhatsApp Image 2026-05-01 at 12.41.16 PM (1).jpeg",
-  dentures: "Dentures — Full & Partial.png",
+  dentures: "flexi-dentures-2.jpeg",
   "gum-treatment": "Gum Disease Treatment.png",
   "paediatric-dentistry": "WhatsApp Image 2026-05-01 at 12.41.18 PM (2).jpeg",
   "smile-makeover": "Porcelain Veneers.png.jpg",
@@ -131,6 +131,8 @@ function parseServiceBlock(block: string): Service | null {
     note: String(data.note ?? ""),
     showHomepage: /yes/i.test(showHomepageRaw),
     homepagePosition: parseHomepagePosition(showHomepageRaw),
+    imageSrc2: data.image_src_2 ? String(data.image_src_2) : undefined,
+    imageAlt2: data.image_alt_2 ? String(data.image_alt_2) : undefined,
   };
 }
 
@@ -163,3 +165,4 @@ export function getHomepageServices() {
     (service): service is Service => Boolean(service),
   );
 }
+

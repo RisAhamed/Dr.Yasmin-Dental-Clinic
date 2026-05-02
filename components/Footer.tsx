@@ -26,9 +26,14 @@ export default function Footer() {
               <Link href="#" className="hover:text-[#00B4D8] min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Facebook">
                 <Globe />
               </Link>
-              <Link href="#" className="hover:text-[#00B4D8] min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Instagram">
+              <a
+                href="tel:+919551118120"
+                className="hover:text-[#00B4D8] min-w-[44px] min-h-[44px] flex items-center justify-center"
+                aria-label="Call Supreme Multi-Speciality Dental Centre"
+                title="Call us: +91 95511 18120"
+              >
                 <PhoneCall />
-              </Link>
+              </a>
               <Link href={clinicInfo.whatsapp} className="hover:text-[#00B4D8] min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="WhatsApp">
                 <MessageCircle />
               </Link>
@@ -92,3 +97,4 @@ export default function Footer() {
     </footer>
   );
 }
+

@@ -30,7 +30,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50">
       <div className="bg-[#0A7EA4] text-white text-xs md:text-sm hidden md:block">
         <div className="mx-auto max-w-7xl px-4 md:px-6 py-2 flex flex-col md:flex-row md:items-center md:justify-between gap-1">
-          <p>📞 24/7 Emergency: {clinicInfo.phone}</p>
+          <p>📞 24/7 Emergency: <a href="tel:+919551118120" className="hover:underline" aria-label="Call us at +91 9551118120">{clinicInfo.phone}</a></p>
           <p>📍 {clinicInfo.shortAddress}</p>
         </div>
       </div>

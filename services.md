@@ -417,37 +417,44 @@ note         : Monthly check-ups required. Total duration: 12–24 months.
 
 ---
 
-### SERVICE 11 — Dentures (Full & Partial)
+### SERVICE 11 — Flexible (Flexi) Dentures
 ```
 slug          : dentures
 category      : General
-display_type  : ICON
-icon_name     : Smile
-icon_color    : text-blue-500
-icon_bg       : bg-blue-100
+display_type  : IMAGE
+image_url     : /services/flexi-dentures-2.jpeg
+local_image   : /services/flexi-dentures-2.jpeg
+image_alt     : "Flexible partial denture with pink thermoplastic base"
+image_alt_2   : "Flexi denture — comfortable and metal-free prosthesis"
+image_src_2   : /services/flexi-dentures-1.jpeg
 badge_color   : bg-blue-100 text-blue-700
-title         : Dentures — Full & Partial
-short_desc    : Custom-fitted removable or implant-supported dentures that
-                restore your smile, chewing ability, and facial structure.
-duration      : 3–5 sittings over 2–3 weeks
-price         : Starting from ₹5,000
+title         : Flexible (Flexi) Dentures
+short_desc    : Say goodbye to uncomfortable metal clasps. Our flexible (flexi)
+                dentures are made from a lightweight, tissue-coloured
+                thermoplastic material that adapts to the shape of your mouth.
+                They are virtually invisible, highly comfortable, and far more
+                natural-looking than traditional metal partial dentures.
+duration      : Single sitting impression; prosthesis ready in 3–5 days
+price         : Starting from ₹8,000
 badge_extra   : null
 show_homepage : NO
 
 EXPAND DETAIL:
-full_desc    : Dentures replace all (full) or some (partial) missing teeth.
-               Modern acrylic dentures are comfortable, natural-looking, and
-               custom-fitted to your gums. Implant-supported dentures offer
-               a more stable, fixed alternative for complete tooth loss.
+full_desc    : Flexible (flexi) dentures are made from a lightweight,
+                tissue-coloured thermoplastic material that is more comfortable
+                and natural-looking than traditional acrylic dentures with metal
+                clasps. They adapt seamlessly to the shape of your mouth and are
+                virtually invisible when worn. Ideal for patients seeking comfort
+                and aesthetics.
 expect       :
-  - Gum impressions and jaw measurements taken
-  - Wax try-in stage for fit and aesthetics check
-  - Final denture fabrication in dental lab
-  - Fitting, adjustments, and aftercare guidance
-who_needs    : Elderly patients or those with multiple or complete tooth loss
-note         : Adjustment period of 2–4 weeks is normal. Remove and clean daily.
+  - Single sitting impression for custom fit
+  - Digital design preview of prosthesis
+  - Lightweight thermoplastic fabrication in lab
+  - Quick turnaround: ready in 3–5 days
+who_needs    : Patients with missing teeth seeking comfortable, invisible, metal-free
+                partial dentures as an alternative to traditional clasped dentures
+note         : Extremely comfortable and durable. Regular cleaning and care required.
 ```
-
 ---
 
 ### SERVICE 12 — Gum Disease Treatment (Periodontics)
@@ -748,3 +755,4 @@ Schema        : Add MedicalProcedure schema for each service (name + description
 ##  card components exactly as specified in that file. If local images
 ##  exist in /public/services/, use them. Otherwise use Unsplash URLs."
 ## ============================================================================
+

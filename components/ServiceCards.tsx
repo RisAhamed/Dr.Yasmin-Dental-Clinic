@@ -89,13 +89,34 @@ export default function ServiceCards({ services, mode }: Props) {
                 aria-label={service.title}
               >
                 <div className="h-[200px] relative overflow-hidden">
-                  <Image
-                    src={service.imageSrc}
-                    alt={service.imageAlt}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
+                  {service.imageSrc2 ? (
+                    <div className="flex w-full h-[180px] overflow-hidden rounded-t-xl">
+                      <Image
+                        src={service.imageSrc2}
+                        alt={service.imageAlt2 || service.imageAlt}
+                        width={300}
+                        height={180}
+                        className="w-1/2 h-[180px] object-cover rounded-tl-xl"
+                        sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 33vw"
+                      />
+                      <Image
+                        src={service.imageSrc}
+                        alt={service.imageAlt}
+                        width={300}
+                        height={180}
+                        className="w-1/2 h-[180px] object-cover rounded-tr-xl"
+                        sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 33vw"
+                      />
+                    </div>
+                  ) : (
+                    <Image
+                      src={service.imageSrc}
+                      alt={service.imageAlt}
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  )}
                 </div>
 
                 <div className="p-4 md:p-5">
