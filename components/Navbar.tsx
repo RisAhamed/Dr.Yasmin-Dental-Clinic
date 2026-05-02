@@ -28,26 +28,26 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50">
-      <div className="bg-[#0A7EA4] text-white text-xs md:text-sm hidden md:block">
-        <div className="mx-auto max-w-7xl px-4 md:px-6 py-2 flex flex-col md:flex-row md:items-center md:justify-between gap-1">
+<div className="bg-[#0A7EA4] text-white text-xs lg:text-sm hidden lg:block">
+        <div className="mx-auto max-w-7xl px-4 lg:px-6 py-2 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-1">
           <p>📞 24/7 Emergency: <a href="tel:+919551118120" className="hover:underline" aria-label="Call us at +91 9551118120">{clinicInfo.phone}</a></p>
-          <p>📍 {clinicInfo.shortAddress}</p>
+          <p className="hidden lg:block">📍 {clinicInfo.shortAddress}</p>
         </div>
       </div>
 
       <nav className={`bg-white transition-shadow ${isScrolled ? "shadow-md" : "shadow-sm"}`}>
         <div className="mx-auto max-w-7xl px-4 md:px-6 py-4 flex items-center justify-between">
-<Link href="/" className="flex items-center gap-2" aria-label="Go to homepage">
-            <Stethoscope className="text-[#0A7EA4]" />
+<Link href="/" className="flex items-center gap-2" aria-label="Go to homepage" style={{ maxWidth: "calc(100vw - 80px)" }}>
+            <Stethoscope className="text-[#0A7EA4] flex-shrink-0" />
             <span
               className="font-bold text-[#0A7EA4]"
-              style={{ fontSize: "clamp(14px, 2.5vw, 20px)", whiteSpace: "nowrap" }}
+              style={{ fontSize: "clamp(13px, 2.5vw, 18px)", lineHeight: 1.3, whiteSpace: "normal" }}
             >
               {clinicInfo.name}
             </span>
           </Link>
 
-          <div className="hidden md:flex items-center gap-7">
+          <div className="hidden lg:flex items-center gap-7">
             {navItems.map((item) => {
               const active = pathname === item.href;
               return (
@@ -67,7 +67,7 @@ export default function Navbar() {
             })}
           </div>
 
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <Link
               href={clinicInfo.mapsUrl}
               target="_blank"
@@ -80,7 +80,7 @@ export default function Navbar() {
 
           <button
             type="button"
-            className="md:hidden text-[#0A7EA4] min-w-[44px] min-h-[44px] flex items-center justify-center"
+            className="lg:hidden text-[#0A7EA4] min-w-[44px] min-h-[44px] flex items-center justify-center"
             onClick={() => setOpen((prev) => !prev)}
             aria-label={open ? "Close mobile menu" : "Open mobile menu"}
           >
@@ -89,7 +89,7 @@ export default function Navbar() {
         </div>
 
         {open && (
-          <div className="md:hidden border-t border-gray-200 px-4 py-4 bg-white">
+          <div className="lg:hidden border-t border-gray-200 px-4 py-4 bg-white">
             <div className="flex flex-col gap-2">
               {navItems.map((item) => {
                 const active = pathname === item.href;
