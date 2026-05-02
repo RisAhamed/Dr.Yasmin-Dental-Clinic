@@ -37,7 +37,7 @@ export default function Navbar() {
 
       <nav className={`bg-white transition-shadow ${isScrolled ? "shadow-md" : "shadow-sm"}`}>
         <div className="mx-auto max-w-7xl px-4 md:px-6 py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2" aria-label="Go to homepage">
+<Link href="/" className="flex items-center gap-2" aria-label="Go to homepage">
             <Stethoscope className="text-[#0A7EA4]" />
             <span
               className="font-bold text-[#0A7EA4]"

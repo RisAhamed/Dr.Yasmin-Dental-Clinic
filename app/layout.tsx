@@ -33,6 +33,11 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: siteUrl },
   robots: { index: true, follow: true },
+  icons: {
+    icon: "/logo.jpeg",
+    shortcut: "/logo.jpeg",
+    apple: "/logo.jpeg",
+  },
   openGraph: {
     title: "Supreme Multi-Speciality Dental Centre Chennai",
     description: "Expert dental care in Vadapalani, Chennai. Affordable treatments.",
