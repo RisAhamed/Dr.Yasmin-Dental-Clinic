@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://supreme-dental-clinic.vercel.app/sitemap.xml',
+    sitemap: 'https://www.supremedental.clinic/sitemap.xml',
   }
 }

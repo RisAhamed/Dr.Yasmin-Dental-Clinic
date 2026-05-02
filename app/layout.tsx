@@ -20,6 +20,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.supremedental.clinic'),
   title: "Supreme Multi-Speciality Dental Centre | 24/7 Dentist in Vadapalani, Chennai",
   description:
     "Supreme Multi-Speciality Dental Centre — Expert dental care in Vadapalani, Chennai with teeth cleaning, root canal, implants, whitening and emergency dental care.",
