@@ -706,7 +706,7 @@ image_alt     : "24/7 emergency dental care Vadapalani Chennai open now"
 badge_color   : bg-red-600 text-white  [ADD pulse animation class]
 title         : 24/7 Emergency Dental Care
 short_desc    : Round-the-clock emergency care for sudden toothache, broken
-                teeth, dental trauma, lost fillings, or swelling — any hour.
+                 teeth, dental trauma, lost fillings, or swelling — any hour.
 duration      : Immediate — walk-in or call ahead
 price         : Starting from ₹499
 badge_extra   : "OPEN NOW 24/7"  [Red badge, pulsing dot animation]
@@ -718,12 +718,52 @@ full_desc    : Dental emergencies don't follow office hours. Dr. Yasmin
                emergency cases. We handle severe toothache, dental abscesses,
                knocked-out teeth, broken crowns, and facial swelling.
 expect       :
-  - Immediate pain relief on arrival (anaesthesia or medication)
-  - Emergency X-ray for rapid diagnosis
-  - Temporary or permanent treatment of the emergency
-  - Follow-up appointment booked before you leave
+   - Immediate pain relief on arrival (anaesthesia or medication)
+   - Emergency X-ray for rapid diagnosis
+   - Temporary or permanent treatment of the emergency
+   - Follow-up appointment booked before you leave
 who_needs    : Anyone experiencing sudden dental pain, injury, or swelling
 note         : Call ahead if possible so we can prepare. Walk-ins also welcome any time.
+```
+
+---
+
+### SERVICE 19 — Complete Teeth Make Over
+```
+slug          : complete-teeth-makeover
+category      : Cosmetic
+display_type  : IMAGE
+image_url     : /services/Images/complete teeth smile make over.png
+local_image   : /services/complete teeth smile make over.png
+image_alt     : "Complete teeth smile make over at Supreme Multi-Speciality Dental Centre Vadapalani"
+badge_color   : bg-pink-100 text-pink-700
+title         : Complete Teeth Make Over
+short_desc    : A comprehensive transformation of your smile using advanced
+                 cosmetic dentistry — combining multiple procedures for a
+                 complete, radiant, and confident smile.
+duration      : Multiple sittings — customized treatment plan
+price         : Custom quote after consultation
+badge_extra   : "Transform Your Smile"
+show_homepage : NO
+
+EXPAND DETAIL:
+full_desc    : Complete Teeth Make Over is a full-mouth cosmetic transformation
+               that addresses multiple dental concerns simultaneously. Using a
+               combination of advanced procedures like veneers, crowns, whitening,
+               and alignment corrections, we create a harmonious, natural-looking
+               smile that complements your facial features. Each treatment plan
+               is customized to your unique needs and smile goals.
+expect       :
+   - Comprehensive smile analysis and digital imaging
+   - Customized treatment plan with timeline and phases
+   - Combination of veneers, crowns, whitening as needed
+   - Final smile preview before completing treatment
+   - Aftercare guidance for maintaining your new smile
+who_needs    : Patients with multiple cosmetic concerns including stained,
+               misaligned, chipped, gapped, or worn teeth seeking a complete
+               smile transformation
+note         : Treatment duration varies based on complexity. Results are
+               long-lasting with proper care and maintenance.
 ```
 
 ---
