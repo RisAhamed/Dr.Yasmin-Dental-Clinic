@@ -76,6 +76,7 @@ export default function Footer() {
               <p>Orthodontics</p>
               <p>Paediatric Dentistry</p>
               <p>Emergency Dentistry</p>
+              <p>Facial Surgical Correction</p>
             </div>
           </div>
 

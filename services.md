@@ -524,7 +524,45 @@ note         : First visit recommended at age 1 or when first tooth appears.
 
 ---
 
-### SERVICE 14 — Smile Makeover (Cosmetic Consultation)
+### SERVICE 14 — Facial Surgical Correction
+```
+slug          : facial-surgical-correction
+category      : Surgical
+display_type  : IMAGE
+image_url     : /services/Images/child photo.jpeg
+local_image   : /services/Images/child photo.jpeg
+image_alt     : "Child patient treated for facial surgical correction at Supreme Multi-Speciality Dental Centre"
+badge_color   : bg-red-100 text-red-700
+title         : Facial Surgical Correction
+short_desc    : Specialised surgical correction for facial and dental
+               anomalies in children, including cleft lip, cleft palate,
+               and jaw alignment corrections. Our expert team provides
+               compassionate care to restore function, appearance,
+               and confidence.
+duration      : Duration: Assessed per case; surgical planning over 1–2 consultations
+price         : Custom quote after consultation
+badge_extra   : null
+show_homepage : NO
+
+EXPAND DETAIL:
+full_desc    : Our facial surgical correction services provide specialised
+              surgical care for children with facial and dental
+              anomalies. This includes cleft lip and palate repairs,
+              jaw alignment surgeries, and other corrective procedures.
+              We work with a multidisciplinary team to ensure comprehensive
+              care and natural-looking results.
+expect       :
+  - Comprehensive surgical assessment and planning
+  - Cleft lip/palate repair surgery
+  - Jaw alignment correction procedures
+  - Post-surgical care and follow-up
+who_needs    : Children with facial or dental anomalies requiring surgical correction
+note         : Surgical planning requires 1–2 consultation sessions.
+```
+
+---
+
+### SERVICE 15 — Smile Makeover (Cosmetic Consultation)
 ```
 slug          : smile-makeover
 category      : Cosmetic

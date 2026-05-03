@@ -23,17 +23,18 @@ const SERVICE_IMAGE_MAP: Record<string, string> = {
   "dental-implants": "dental implants 2.png",
   "teeth-whitening": "Teeth Whitening & Bleaching.png",
   veneers: "Porcelain Veneers.png.jpg",
-  "crowns-bridges": "Dental Crowns & Bridges.png",
+  "crowns-bridges": "Dental Crowns & Bridges-1.jpeg",
   orthodontics: "WhatsApp Image 2026-05-01 at 12.41.16 PM.jpeg",
   "clear-aligners": "WhatsApp Image 2026-05-01 at 12.41.16 PM (1).jpeg",
-  dentures: "flexi-dentures-2.jpeg",
-  "gum-treatment": "Gum Disease Treatment.png",
-  "paediatric-dentistry": "WhatsApp Image 2026-05-01 at 12.41.18 PM (2).jpeg",
+  dentures: "flexi-dentures-1.jpeg",
+  "gum-treatment": "Gum Disease Treatment-2.png",
+  "paediatric-dentistry": "Teeth Sensitivity Treatment.png",
   "smile-makeover": "Porcelain Veneers.png.jpg",
-  "sensitivity-treatment": "Teeth Sensitivity Treatment.png",
+  "sensitivity-treatment": "teeth-sensitivity-elderly.jpg",
   "dental-xrays": "Dental X-rays & Digital Diagnostics.png",
   "tmj-treatment": "Jaw Pain & TMJ Treatment.png",
   "emergency-dental": "Supreme 3.jpg.jpeg",
+  "facial-surgical-correction": "child photo.jpeg",
 };
 
 function cleanText(value: string) {
