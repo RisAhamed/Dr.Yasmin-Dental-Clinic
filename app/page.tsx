@@ -5,7 +5,7 @@ import GoogleMap from "@/components/GoogleMap";
 import HeroSlider from "@/components/HeroSlider";
 import SectionDivider from "@/components/SectionDivider";
 import ServiceCards from "@/components/ServiceCards";
-import SmileGallery from "@/components/SmileGallery";
+
 import StatsCounter from "@/components/StatsCounter";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -124,8 +124,6 @@ export default function HomePage() {
           </Link>
         </div>
       </section>
-
-      <SmileGallery />
 
       <ClinicGallery />
 
