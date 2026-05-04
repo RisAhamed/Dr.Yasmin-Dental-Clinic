@@ -772,6 +772,81 @@ note         : Requires initial consultation and diagnostic assessment.
 
 ---
 
+### SERVICE 21 — Impacted Wisdom Tooth Removal
+```
+slug          : impacted-wisdom-tooth
+category      : Surgical
+display_type  : IMAGE
+image_url     : /services/Impacted wisdom tooth removal.png
+local_image   : /services/Impacted wisdom tooth removal.png
+image_alt     : "Impacted wisdom tooth removal surgery at Supreme Multi-Speciality Dental Centre Vadapalani"
+badge_color   : bg-red-100 text-red-700
+title         : Impacted Wisdom Tooth Removal
+short_desc    : Safe and painless surgical removal of impacted or partially
+               erupted wisdom teeth causing pain, infection, or crowding.
+duration      : 45–90 mins per tooth
+price         : Starting from ₹2,500
+badge_extra   : "Painless"
+show_homepage : NO
+
+EXPAND DETAIL:
+full_desc    : Impacted wisdom teeth can cause severe pain, infections,
+               gum disease, and damage to adjacent teeth. Our expert surgical
+               team provides safe, painless removal of impacted wisdom teeth
+               under local anaesthesia or sedation. We handle simple and
+               complex surgical extractions with minimal discomfort.
+expect       :
+   - Digital X-ray and 3D imaging for precise assessment
+   - Local anaesthesia or sedation for pain-free procedure
+   - Surgical removal of impacted tooth
+   - Post-operative care instructions and medication
+   - Follow-up check after 7 days
+who_needs    : Patients with impacted, partially erupted, or problematic
+               wisdom teeth causing pain, swelling, or infection
+note         : Recovery takes 3–5 days. Soft diet and rest recommended
+               for the first 48 hours.
+```
+
+---
+
+### SERVICE 22 — Teeth Cyst Removal & Reconstruction
+```
+slug          : cyst-removal-reconstruction
+category      : Surgical
+display_type  : IMAGE
+image_url     : /services/Teeth cyst removal and reconstruction.png
+local_image   : /services/Teeth cyst removal and reconstruction.png
+image_alt     : "Teeth cyst removal and reconstruction surgery at Supreme Multi-Speciality Dental Centre Vadapalani"
+badge_color   : bg-red-100 text-red-700
+title         : Teeth Cyst Removal & Reconstruction
+short_desc    : Surgical removal of dental cysts followed by bone grafting
+               and reconstruction to restore jaw health and aesthetics.
+duration      : Surgical procedure — 60–120 mins
+price         : Starting from ₹5,000
+badge_extra   : null
+show_homepage : NO
+
+EXPAND DETAIL:
+full_desc    : Dental cysts are fluid-filled sacs that can develop in the
+               jawbone or around tooth roots, causing bone destruction and
+               infection if left untreated. We provide complete surgical
+               treatment including cyst removal, root canal treatment if
+               needed, bone grafting for regeneration, and reconstruction
+               to restore jaw integrity and appearance.
+expect       :
+   - Detailed examination and 3D imaging for diagnosis
+   - Complete surgical cyst removal
+   - Root canal treatment for associated tooth if needed
+   - Bone grafting for jaw reconstruction
+   - Follow-up monitoring and healing assessment
+who_needs    : Patients diagnosed with dental cysts, odontogenic tumors,
+               or jaw lesions requiring surgical intervention
+note         : Treatment plan customized based on cyst size and location.
+               Full recovery within 2–4 weeks.
+```
+
+---
+
 ## HOMEPAGE SERVICES SECTION DISPLAY RULES
 
 Show 6 service preview cards on homepage (services marked show_homepage: YES):

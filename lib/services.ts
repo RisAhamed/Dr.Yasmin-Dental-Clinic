@@ -37,6 +37,8 @@ const SERVICE_IMAGE_MAP: Record<string, string> = {
   "facial-surgical-correction": "child photo.jpeg",
   "complete-teeth-smile-makeover": "complete teeth smile make over.png",
   "jaw-fracture-correction": "WhatsApp Image 2026-05-01 at 12.41.19 PM (2).jpeg",
+  "impacted-wisdom-tooth": "Impacted wisdom tooth removal.png",
+  "cyst-removal-reconstruction": "Teeth cyst removal and reconstruction.png",
 };
 
 function cleanText(value: string) {
