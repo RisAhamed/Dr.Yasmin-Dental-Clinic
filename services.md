@@ -735,6 +735,43 @@ note         : Treatment duration varies based on complexity. Results are
 
 ---
 
+### SERVICE 20 — Complete Jaw Fracture Correction
+```
+slug          : jaw-fracture-correction
+category      : Surgical
+display_type  : IMAGE
+image_url     : /services/Images/WhatsApp Image 2026-05-01 at 12.41.19 PM (2).jpeg
+local_image   : /services/Images/WhatsApp Image 2026-05-01 at 12.41.19 PM (2).jpeg
+image_alt     : "Complete jaw fracture correction surgery at Supreme Multi-Speciality Dental Centre Vadapalani"
+badge_color   : bg-red-100 text-red-700
+title         : Complete Jaw Fracture Correction
+short_desc    : Comprehensive surgical treatment for jaw fractures and facial
+               trauma, restoring function, alignment, and aesthetics.
+duration      : Surgical procedure — multiple consultations required
+price         : Custom quote after consultation
+badge_extra   : "Trauma Care"
+show_homepage : NO
+
+EXPAND DETAIL:
+full_desc    : Our complete jaw fracture correction services provide expert
+               surgical care for jaw injuries resulting from accidents, trauma,
+               or injury. We offer comprehensive treatment including fracture
+               reduction, wiring, fixation, and post-surgical rehabilitation
+               to restore proper jaw function and facial appearance.
+expect       :
+   - Comprehensive facial examination and diagnostic imaging
+   - Surgical treatment planning with 3D CT scan if needed
+   - Fracture reduction and surgical fixation
+   - Post-operative care and monitoring
+   - Rehabilitation guidance for optimal healing
+who_needs    : Patients with jaw fractures, facial trauma, or mandibular
+               injuries requiring surgical correction
+note         : Requires initial consultation and diagnostic assessment.
+               Treatment plan customized based on injury severity.
+```
+
+---
+
 ## HOMEPAGE SERVICES SECTION DISPLAY RULES
 
 Show 6 service preview cards on homepage (services marked show_homepage: YES):
