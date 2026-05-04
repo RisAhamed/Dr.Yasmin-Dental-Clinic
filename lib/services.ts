@@ -35,7 +35,7 @@ const SERVICE_IMAGE_MAP: Record<string, string> = {
   "tmj-treatment": "Jaw Pain & TMJ Treatment.png",
   "emergency-dental": "Supreme 3.jpg.jpeg",
   "facial-surgical-correction": "child photo.jpeg",
-  "complete-teeth-makeover": "complete teeth smile make over.png",
+  "complete-teeth-smile-makeover": "complete teeth smile make over.png",
 };
 
 function cleanText(value: string) {

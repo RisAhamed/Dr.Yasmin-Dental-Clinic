@@ -562,39 +562,6 @@ note         : Surgical planning requires 1–2 consultation sessions.
 
 ---
 
-### SERVICE 15 — Smile Makeover (Cosmetic Consultation)
-```
-slug          : smile-makeover
-category      : Cosmetic
-display_type  : IMAGE
-image_url     : https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80
-local_image   : /public/services/smile-makeover.jpg
-image_alt     : "Complete smile makeover cosmetic dentistry Vadapalani Chennai"
-badge_color   : bg-pink-100 text-pink-700
-title         : Complete Smile Makeover
-short_desc    : A personalised combination of cosmetic treatments — whitening,
-                veneers, reshaping, and alignment — for your dream smile.
-duration      : Multiple treatments, customised plan
-price         : Custom quote after consultation
-badge_extra   : "Transformative"
-show_homepage : NO
-
-EXPAND DETAIL:
-full_desc    : A smile makeover combines two or more cosmetic procedures
-               tailored to your unique facial features and smile goals.
-               May include whitening, veneers, gum contouring, bonding,
-               and aligners. A digital smile preview is provided before starting.
-expect       :
-  - Full smile analysis and digital smile design preview
-  - Customised treatment plan with procedure sequence
-  - Combined appointments to reduce clinic visits
-  - Final photography of completed smile transformation
-who_needs    : Patients wanting to address multiple cosmetic concerns together
-note         : Timeline and cost vary based on treatment combination chosen.
-```
-
----
-
 ### SERVICE 15 — Teeth Sensitivity Treatment
 ```
 slug          : sensitivity-treatment
@@ -728,16 +695,16 @@ note         : Call ahead if possible so we can prepare. Walk-ins also welcome a
 
 ---
 
-### SERVICE 19 — Complete Teeth Make Over
+### SERVICE 19 — Complete Teeth & Smile Make Over
 ```
-slug          : complete-teeth-makeover
+slug          : complete-teeth-smile-makeover
 category      : Cosmetic
 display_type  : IMAGE
 image_url     : /services/Images/complete teeth smile make over.png
 local_image   : /services/complete teeth smile make over.png
-image_alt     : "Complete teeth smile make over at Supreme Multi-Speciality Dental Centre Vadapalani"
+image_alt     : "Complete teeth and smile make over at Supreme Multi-Speciality Dental Centre Vadapalani"
 badge_color   : bg-pink-100 text-pink-700
-title         : Complete Teeth Make Over
+title         : Complete Teeth & Smile Make Over
 short_desc    : A comprehensive transformation of your smile using advanced
                  cosmetic dentistry — combining multiple procedures for a
                  complete, radiant, and confident smile.
